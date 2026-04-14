@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LarrainVial — Plataforma de Fondos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ═══ TOPBAR ═══ -->
+<header class="top">
+    <div class="top__in">
+        <div class="top__brand"><span class="top__logo">LarrainVial</span><span class="top__pipe">|</span><span class="top__unit">Asset Management</span></div>
+        <div class="top__r">
+            <span class="top__date">Marzo 2026</span>
+            <button class="top__gear" id="adminToggle" title="Admin"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></button>
+        </div>
+    </div>
+</header>
+
+<!-- ═══ TAB NAV ═══ -->
+<nav class="tabs" id="tabNav">
+    <div class="tabs__in">
+        <a class="tab tab--active" href="#sec-resumen">Resumen</a>
+        <a class="tab" href="#sec-simulador">Simulador</a>
+        <a class="tab" href="#sec-fondo">El Fondo</a>
+        <a class="tab" href="#sec-rendimiento">Rendimiento</a>
+        <a class="tab" href="#sec-datos">Datos</a>
+        <a class="tab" href="#sec-comparar">Comparar</a>
+    </div>
+</nav>
+
+<main class="main">
+
+<!-- ═══ 1. RESUMEN — Decision en 10 segundos ═══ -->
+<section class="s" id="sec-resumen">
+    <div class="s__in">
+        <div class="hero-grid">
+            <div class="hero-main">
+                <p class="eyebrow">Fondo Mutuo &middot; Renta Fija &middot; Serie A</p>
+                <h1 class="fund-name" id="fundName">Ahorro UF</h1>
+                <p class="fund-lead">Busca <strong>estabilidad y proteccion</strong> contra la inflacion, invirtiendo en instrumentos de deuda en UF.</p>
+                <div class="decision-box">
+                    <p class="decision-box__title">Este fondo es para ti si...</p>
+                    <ul class="decision-box__list">
+                        <li>Buscas <strong>preservar capital</strong> con baja volatilidad</li>
+                        <li>Tu horizonte es de <strong>6 meses o mas</strong></li>
+                        <li>Prefieres <strong>estabilidad</strong> sobre rentabilidad agresiva</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hero-side">
+                <div class="kpi-mini-grid">
+                    <div class="kpi-mini">
+                        <span class="kpi-mini__val kpi-mini__val--green">Bajo</span>
+                        <span class="kpi-mini__label">Riesgo (N-1)</span>
+                    </div>
+                    <div class="kpi-mini">
+                        <span class="kpi-mini__val">6+ meses</span>
+                        <span class="kpi-mini__label"><span class="tt" data-tooltip="plazo_recomendado"></span>Horizonte</span>
+                    </div>
+                    <div class="kpi-mini">
+                        <span class="kpi-mini__val" id="volHero">0,6%</span>
+                        <span class="kpi-mini__label"><span class="tt" data-tooltip="volatilidad_1yr"></span>Volatilidad 12M</span>
+                    </div>
+                    <div class="kpi-mini">
+                        <span class="kpi-mini__val" id="kpiExposicionUF">75,7%</span>
+                        <span class="kpi-mini__label"><span class="tt" data-tooltip="exposicion_uf"></span>Exp. UF</span>
+                    </div>
+                </div>
+                <div class="risk-visual">
+                    <span class="risk-visual__label">Nivel de riesgo</span>
+                    <div class="risk-visual__bar"><div class="risk-visual__seg risk-visual__seg--on"></div><div class="risk-visual__seg"></div><div class="risk-visual__seg"></div><div class="risk-visual__seg"></div><div class="risk-visual__seg"></div></div>
+                    <div class="risk-visual__ends"><span>Bajo</span><span>Alto</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ 2. SIMULADOR (protagonista) ═══ -->
+<section class="s s--dark" id="sec-simulador">
+    <div class="s__in">
+        <h2 class="s__title s__title--lt">Que pasaria con tu dinero?</h2>
+        <p class="s__sub s__sub--lt">Simulacion basada en el comportamiento historico del fondo.</p>
+        <div class="sim-bar">
+            <div class="sim-f"><label>Cuanto invertir?</label><div class="sim-iw"><span>$</span><input type="text" id="simMonto" value="10.000.000"></div></div>
+            <div class="sim-f"><label>Por cuanto tiempo?</label><select id="simHorizonte"><option value="6">6 meses</option><option value="12" selected>12 meses</option><option value="18">18 meses</option><option value="24">24 meses</option><option value="36">36 meses</option></select></div>
+            <button class="sim-go" id="simRun"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>Simular</button>
+        </div>
+        <div class="sim-out" id="simResults">
+            <div class="sim-kpis">
+                <div class="sim-k sim-k--main"><span class="sim-k__lb"><span class="tt" data-tooltip="rentabilidad_nominal"></span>Valor final estimado</span><span class="sim-k__val" id="simValorNominal">—</span><span class="sim-k__pct" id="simRentNominal">—</span></div>
+                <div class="sim-k"><span class="sim-k__lb"><span class="tt" data-tooltip="rentabilidad_real"></span>Ajustado por inflacion</span><span class="sim-k__val" id="simValorReal">—</span><span class="sim-k__pct" id="simRentReal">—</span></div>
+            </div>
+            <div class="sim-chart"><canvas id="simChart"></canvas></div>
+            <div class="sim-msg" id="simMessage"></div>
+            <p class="sim-disc">Rentabilidades pasadas no garantizan resultados futuros.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ 3. EL FONDO ═══ -->
+<section class="s" id="sec-fondo">
+    <div class="s__in">
+        <h2 class="s__title">En que invierte este fondo?</h2>
+        <p class="s__sub">Principalmente en instrumentos en UF para proteger el valor real de tu inversion.</p>
+        <div class="fondo-grid">
+            <div class="fondo-chart"><div class="donut-box"><canvas id="composicionChart"></canvas></div><div class="comp-leg" id="composicionLegend"></div></div>
+            <div class="fondo-info">
+                <div class="insight-box"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><p>El 72,9% esta en <strong>bonos bancarios y corporativos</strong> de alta calidad. La alta concentracion en UF protege contra la inflacion.</p></div>
+                <h3 class="mini-hd">Principales emisores</h3>
+                <div class="iss-list" id="issuerList"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ SERIES GUIDE ═══ -->
+<div class="s s--soft" id="sec-series">
+    <div class="s__in">
+        <h2 class="s__title">Guia de Series</h2>
+        <p class="s__sub">Cada serie tiene condiciones diferentes. Elige la que mejor se adapte a tu perfil.</p>
+        <div class="series-grid">
+            <div class="series-card series-card--active">
+                <span class="series-card__badge">Actual</span>
+                <h3>Serie A</h3>
+                <p class="series-card__desc">Sin monto minimo. Ideal para personas naturales que inician.</p>
+                <div class="series-card__detail"><span>TAC</span><span id="kpiTAC">1,61%</span></div>
+                <div class="series-card__detail"><span>Remun.</span><span id="kpiRemuneracion">1,90%</span></div>
+            </div>
+            <div class="series-card">
+                <h3>Serie APV</h3>
+                <p class="series-card__desc">Con beneficio tributario por ahorro previsional voluntario (Art. 57 LIR).</p>
+                <div class="series-card__detail"><span>Beneficio</span><span>Tributario</span></div>
+            </div>
+            <div class="series-card">
+                <h3>Serie I</h3>
+                <p class="series-card__desc">Para inversionistas institucionales o montos mayores.</p>
+                <div class="series-card__detail"><span>Monto min.</span><span>Variable</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══ TAX BENEFITS ═══ -->
+<div class="s" id="sec-tributario">
+    <div class="s__in">
+        <h2 class="s__title">Beneficios Tributarios</h2>
+        <p class="s__sub">Opciones legales para optimizar tu carga impositiva.</p>
+        <div class="tax-row">
+            <div class="tax-card"><span class="tax-card__art">Art. 107</span><strong>Exencion ganancia de capital</strong><p>Ganancias en fondos con presencia bursatil pueden estar exentas del impuesto a la renta.</p></div>
+            <div class="tax-card"><span class="tax-card__art">Art. 108</span><strong>Beneficio por reinversion</strong><p>Diferir impuestos al reinvertir el rescate en otro fondo dentro del mismo plazo.</p></div>
+            <div class="tax-card"><span class="tax-card__art">Art. 57 LIR</span><strong>Tramo exento</strong><p>Las rentas pueden acogerse al tramo exento del impuesto global complementario.</p></div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══ 4. RENDIMIENTO ═══ -->
+<section class="s s--soft" id="sec-rendimiento">
+    <div class="s__in">
+        <div class="perf-hd">
+            <div><h2 class="s__title">Rendimiento</h2><p class="s__sub">Evolucion del valor de tu inversion.</p></div>
+            <div class="tog-group" id="chartToggle"><button class="tog tog--on" data-mode="nominal">Nominal</button><button class="tog" data-mode="real">Real</button></div>
+        </div>
+        <div class="ret-chips" id="retChips"></div>
+        <div class="chart-box"><div class="chart-cv"><canvas id="rentabilidadChart"></canvas></div><span class="chart-note">*Base 100</span></div>
+        <details class="dtl"><summary>Ver tabla mensual</summary><div class="dtl__body"><table class="mo-tbl" id="returnsTable"><thead><tr><th></th><th>Ene</th><th>Feb</th><th>Mar</th><th>Abr</th><th>May</th><th>Jun</th><th>Jul</th><th>Ago</th><th>Sep</th><th>Oct</th><th>Nov</th><th>Dic</th><th>Anual</th></tr></thead><tbody></tbody></table></div></details>
+    </div>
+</section>
+
+<!-- ═══ 5. DATOS CLAVE ═══ -->
+<section class="s" id="sec-datos">
+    <div class="s__in">
+        <h2 class="s__title">Datos Clave</h2>
+        <p class="s__sub">Los numeros detras del fondo, explicados.</p>
+        <div class="data-strip">
+            <div class="d-card"><span class="d-card__v" id="kpiYTM">1,4%</span><span class="d-card__n"><span class="tt" data-tooltip="ytm_clf"></span>YTM CLF</span><span class="d-card__e">Retorno esperado hasta vencimiento</span></div>
+            <div class="d-card"><span class="d-card__v" id="kpiDuration">0,9</span><span class="d-card__n"><span class="tt" data-tooltip="duration"></span>Duracion</span><span class="d-card__e">Sensibilidad a cambios de tasas</span></div>
+            <div class="d-card"><span class="d-card__v" id="kpiVolatilidad">0,6%</span><span class="d-card__n"><span class="tt" data-tooltip="volatilidad_1yr"></span>Volatilidad</span><span class="d-card__e">Variacion del fondo en 12 meses</span></div>
+            <div class="d-card"><span class="d-card__v" id="kpiRating">AA+</span><span class="d-card__n"><span class="tt" data-tooltip="rating_promedio"></span>Rating</span><span class="d-card__e">Calidad crediticia promedio</span></div>
+        </div>
+        <div class="info-grid">
+            <div class="info-row"><span>Patrimonio</span><span id="displayPatrimonio">$214.514 MM</span></div>
+            <div class="info-row"><span>Portfolio Manager</span><span>Javier Marshall</span></div>
+            <div class="info-row"><span>Rescate</span><span>T+1</span></div>
+            <div class="info-row"><span>Valor Cuota</span><span>Diario</span></div>
+            <div class="info-row"><span>Monto minimo</span><span>No contempla</span></div>
+            <div class="info-row"><span>RUN / DCV</span><span>10461 / CFMAUFA</span></div>
+            <div class="info-row"><span>Bloomberg</span><span>LVAHUFA CI Equity</span></div>
+            <div class="info-row"><span>Auditores</span><span>KPMG</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ 6. COMPARADOR ═══ -->
+<section class="s s--soft" id="sec-comparar">
+    <div class="s__in">
+        <h2 class="s__title">Compara con otro fondo</h2>
+        <p class="s__sub">Selecciona un fondo para comparar lado a lado.</p>
+        <div class="cmp-select-row">
+            <div class="cmp-current"><strong>Ahorro UF</strong><span class="cmp-badge">Actual</span></div>
+            <span class="cmp-vs">vs</span>
+            <select class="cmp-dropdown" id="cmpSelect">
+                <option value="">Seleccionar fondo...</option>
+                <option value="ahorro_clp">Ahorro CLP</option>
+                <option value="balanceado">Balanceado</option>
+                <option value="accionario">Accionario Chile</option>
+            </select>
+        </div>
+        <div class="cmp-table" id="cmpTable" style="display:none">
+            <div class="cmp-row cmp-row--header"><span></span><span>Ahorro UF</span><span id="cmpName">—</span></div>
+            <div class="cmp-row"><span>Riesgo</span><span class="cmp-val">N-1 (Bajo)</span><span class="cmp-val" id="cmpRiesgo">—</span></div>
+            <div class="cmp-row"><span>Rentabilidad 12M</span><span class="cmp-val">4,29%</span><span class="cmp-val" id="cmpRent">—</span></div>
+            <div class="cmp-row"><span>Volatilidad 12M</span><span class="cmp-val">0,6%</span><span class="cmp-val" id="cmpVol">—</span></div>
+            <div class="cmp-row"><span>Horizonte</span><span class="cmp-val">Desde 6 meses</span><span class="cmp-val" id="cmpHorizonte">—</span></div>
+            <div class="cmp-row"><span>TAC</span><span class="cmp-val">1,61%</span><span class="cmp-val" id="cmpTac">—</span></div>
+            <div class="cmp-row"><span>Tipo</span><span class="cmp-val">Renta Fija UF</span><span class="cmp-val" id="cmpTipo">—</span></div>
+        </div>
+        <div class="cmp-insight" id="cmpInsight" style="display:none"></div>
+    </div>
+</section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="ftr"><div class="ftr__in"><p>Informese de las caracteristicas esenciales de la inversion en este fondo mutuo. Rentabilidades pasadas no garantizan resultados futuros.</p><p class="ftr__links"><a href="https://www.lvassetmanagement.com" target="_blank">lvassetmanagement.com</a> <span class="ftr__dot"></span> <a href="mailto:aportesyrescates@larrainvial.com">Contacto</a> <span class="ftr__dot"></span> +56 2 2339 8500 <span class="ftr__dot"></span> <a href="https://www.cmfchile.cl" target="_blank">CMF</a></p></div></footer>
+
+<!-- ═══ CHATBOT ═══ -->
+<div class="chat" id="chatWidget">
+    <button class="chat__fab" id="chatFab"><svg class="chat__fi" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><svg class="chat__fx" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <div class="chat__pn" id="chatPanel">
+        <div class="chat__hd"><div class="chat__dot"></div><span>Asistente</span></div>
+        <div class="chat__ms" id="chatMessages"><div class="chat__m chat__m--b">Hola! Preguntame sobre el fondo.</div></div>
+        <div class="chat__br"><input type="text" class="chat__inp" id="chatInput" placeholder="Ej: Que es duration?"><button class="chat__sn" id="chatSend"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div>
+    </div>
+</div>
+
+<!-- ═══ ADMIN ═══ -->
+<aside class="adm" id="adminPanel">
+    <div class="adm__ov" id="adminOverlay"></div>
+    <div class="adm__pn">
+        <div class="adm__hd"><h2>Admin</h2><button class="adm__x" id="adminClose">&times;</button></div>
+        <div class="adm__bd">
+            <div class="adm__s"><h3>Datos</h3>
+                <label>Nombre<input type="text" id="adminFundName" value="Ahorro UF"></label>
+                <label>Patrimonio (MM)<input type="number" id="adminPatrimonio" value="214514"></label>
+                <div class="adm__r"><label>Remun (%)<input type="number" step="0.01" id="adminRemuneracion" value="1.90"></label><label>TAC (%)<input type="number" step="0.01" id="adminTAC" value="1.61"></label></div>
+                <button class="adm__btn" id="adminSave">Guardar</button></div>
+            <div class="adm__s"><h3>Parametros</h3>
+                <div class="adm__r"><label>YTM (%)<input type="number" step="0.1" id="adminYTM" value="1.4"></label><label>Dur.<input type="number" step="0.1" id="adminDuration" value="0.9"></label></div>
+                <div class="adm__r"><label>Vol (%)<input type="number" step="0.1" id="adminVolatilidad" value="0.6"></label><label>UF (%)<input type="number" step="0.1" id="adminExposicionUF" value="75.7"></label></div>
+                <label>Rating<input type="text" id="adminRating" value="AA+"></label>
+                <button class="adm__btn" id="adminSaveParams">Guardar</button></div>
+            <div class="adm__s"><h3>UF Historica</h3><label class="adm__file"><input type="file" id="uploadUF" accept=".xlsx,.csv"><span>Subir archivo</span></label><div class="adm__fst" id="uploadUFStatus"></div></div>
+        </div>
+    </div>
+</aside>
+
+<div class="tip" id="tooltipEl" role="tooltip"></div>
+<script src="script.js"></script>
+</body>
+</html>
