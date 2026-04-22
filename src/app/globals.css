@@ -475,6 +475,72 @@ canvas {
   .lv-login-shell {
     padding: 20px !important;
   }
+
+  /* ---------- Tooltips mobile — nunca fuera del viewport ---------- */
+  .help-wrap .tooltip-bubble {
+    position: fixed !important;
+    left: 50% !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: translate(-50%, calc(-100% - 8px)) !important;
+    width: min(260px, calc(100vw - 32px)) !important;
+    max-width: calc(100vw - 32px) !important;
+  }
+  .help-wrap .tooltip-bubble::before {
+    display: none;
+  }
+  /* Al estar con :hover/:focus-within el wrap sirve de ancla: pegamos el tooltip
+     al centro superior del viewport para no salirnos por los bordes */
+  .help-wrap:hover .tooltip-bubble,
+  .help-wrap:focus-within .tooltip-bubble {
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  /* ---------- Contención global de tabs ---------- */
+  .lv-main {
+    width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box;
+  }
+  /* Canvas Chart.js nunca excede el ancho del contenedor */
+  canvas {
+    max-width: 100% !important;
+  }
+  /* Evitar que bloques de texto largos provoquen overflow horizontal */
+  .lv-main p,
+  .lv-main h1,
+  .lv-main h2,
+  .lv-main h3,
+  .lv-main h4,
+  .lv-main span,
+  .lv-main div {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+  /* Wrappers con scroll interno: forzar block + touch smooth */
+  .lv-rent-tabla,
+  .lv-comp-table-wrap,
+  .lv-series-tabla,
+  .lv-cmp-tabla {
+    display: block !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100% !important;
+  }
+  /* Celdas de las tablas con scroll interno más compactas en mobile */
+  .lv-series-tabla table th,
+  .lv-series-tabla table td {
+    white-space: nowrap;
+    font-size: 11px !important;
+    padding: 6px 8px !important;
+  }
+  .lv-comp-table-wrap table th,
+  .lv-comp-table-wrap table td {
+    white-space: nowrap;
+    font-size: 11px !important;
+    padding: 6px 8px !important;
+  }
 }
 
 /* ---------- Desktop ≥ 769px: ocultar menu mobile ---------- */
