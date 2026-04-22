@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash([ -f src/data/FONDOS_LVAM.json ])",
+      "Bash(node -e \"const d=require\\('./src/data/FONDOS_LVAM.json'\\); console.log\\('fondos:', Array.isArray\\(d.fondos\\) ? d.fondos.length : 'not an array'\\); console.log\\('_meta.total_fondos:', d._meta && d._meta.total_fondos\\);\")",
+      "Bash(node -e \"const d=require\\('./src/data/FONDOS_LVAM.json'\\); const f=d.fondos.find\\(x=>x._id==='ahorro-a-plazo'\\); console.log\\(JSON.stringify\\(f, null, 2\\)\\);\")",
+      "Bash(node -e \"const d=require\\('./src/data/FONDOS_LVAM.json'\\); const cats={}; const pals={}; d.fondos.forEach\\(f=>{cats[f._categoria]=\\(cats[f._categoria]||0\\)+1; pals[f._paleta]=\\(pals[f._paleta]||0\\)+1;}\\); console.log\\('categorias:', cats\\); console.log\\('paletas:', pals\\); console.log\\('ejemplo _id:', d.fondos.slice\\(0,5\\).map\\(f=>f._id\\)\\);\")",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"fondo HTTP %{http_code}\\\\n\" http://localhost:3000/fondo/ahorro-a-plazo)",
+      "Bash(node -e \"const d=require\\('./src/data/FONDOS_LVAM.json'\\); ['ahorro-a-plazo','ahorro-capital','monetario','money-market'].forEach\\(id=>{const f=d.fondos.find\\(x=>x._id===id\\); console.log\\(id, '→', f ? 'OK \\('+f.identificacion.nombre_corto+'\\)' : 'NOT FOUND'\\);}\\);\")",
+      "Bash(node scripts/update-fondos.js)",
+      "Bash(node -e \"const d=require\\('./src/data/FONDOS_LVAM.json'\\); console.log\\('ipc keys:', Object.keys\\(d._meta.ipc_mensual.datos\\)\\); const f=d.fondos.find\\(x=>x._id==='ahorro-a-plazo'\\); console.log\\('ahorro-a-plazo: TAC', f.datos_mensuales.estadisticas_cartera.tac_pct, '| PM:', f.identificacion.portfolio_manager, '| riesgo:', f.riesgo.nivel\\);\")",
+      "Bash(curl -s -o /dev/null -w \"login: HTTP %{http_code}\\\\n\" http://localhost:3000/login)",
+      "Bash(curl -s -o /dev/null -w \"index: HTTP %{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"ahorro-a-plazo: HTTP %{http_code}\\\\n\" http://localhost:3000/fondo/ahorro-a-plazo)",
+      "Bash(curl -s -o /dev/null -w \"ahorro-capital: HTTP %{http_code}\\\\n\" http://localhost:3000/fondo/ahorro-capital)",
+      "Bash(curl -s -o /dev/null -w \"monetario: HTTP %{http_code}\\\\n\" http://localhost:3000/fondo/monetario)",
+      "Bash(curl -s -o /dev/null -w \"login: HTTP %{http_code}\\\\n\" http://localhost:3001/login)",
+      "Bash(curl -s -o /dev/null -w \"index: HTTP %{http_code}\\\\n\" http://localhost:3001/)",
+      "Bash(curl -s -o /dev/null -w \"ahorro-a-plazo: HTTP %{http_code}\\\\n\" http://localhost:3001/fondo/ahorro-a-plazo)",
+      "Bash(curl -s -o /dev/null -w \"ahorro-capital: HTTP %{http_code}\\\\n\" http://localhost:3001/fondo/ahorro-capital)",
+      "Bash(curl -s -o /dev/null -w \"monetario: HTTP %{http_code}\\\\n\" http://localhost:3001/fondo/monetario)",
+      "Bash(curl -s http://localhost:3001/login)",
+      "Bash(curl -s http://localhost:3001/fondo/ahorro-a-plazo)",
+      "Bash(curl -s http://localhost:3002/api/mercado)",
+      "Bash(node -e \"const d=require\\('./src/data/FONDOS_LVAM.json'\\); console.log\\('ipc 2026:', JSON.stringify\\(d._meta.ipc_mensual.datos['2026']\\)\\);\")",
+      "Bash(curl -s -o /dev/null -w \"3000:%{http_code} \" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"3001:%{http_code} \" http://localhost:3001/)",
+      "Bash(curl -s -o /dev/null -w \"3002:%{http_code} \" http://localhost:3002/)",
+      "Bash(curl -s -o /dev/null -w \"ahorro-capital: %{http_code}\\\\n\" --max-time 60 http://localhost:3004/fondo/ahorro-capital)",
+      "Bash(curl -s http://localhost:3004/fondo/ahorro-capital)",
+      "Bash(xargs -I{} curl -s \"http://localhost:3004/{}\")",
+      "Bash(curl -s -o /dev/null -w \"money-market: %{http_code}\\\\n\" --max-time 30 http://localhost:3004/fondo/money-market)",
+      "Bash(curl -s http://localhost:3004/fondo/money-market)",
+      "Bash(git add:*)"
+    ]
+  }
+}

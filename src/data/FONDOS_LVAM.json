@@ -1,0 +1,6648 @@
+{
+  "_meta": {
+    "version": "2.0",
+    "generado": "2026-04-19",
+    "periodo_datos": "2026-03-31",
+    "fuente_run": "CMF Chile — www.cmfchile.cl",
+    "administradora": "LarrainVial Asset Management Administradora General de Fondos S.A.",
+    "total_fondos": 42,
+    "ipc_mensual": {
+      "fuente": "INE Chile",
+      "datos": {
+        "2025": {
+          "ene": 1.1,
+          "feb": 0.4,
+          "mar": 0.5,
+          "abr": 0.2,
+          "may": 0.2,
+          "jun": -0.4,
+          "jul": 0.9,
+          "ago": 0,
+          "sep": 0.4,
+          "oct": 0,
+          "nov": 0.3,
+          "dic": -0.2,
+          "anual": 3.5
+        },
+        "2026": {
+          "ene": 0.4,
+          "feb": 0,
+          "mar": 1,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "acumulado": 1.4,
+          "ultimos_12m": 2.8
+        }
+      }
+    },
+    "instruccion_completar": "Campos con null requieren datos mensuales reales. Completar con scraper o informes internos.",
+    "instruccion_claude": "Al generar una ficha: usa _paleta para colores, _categoria_display para el hero-eye, y adapta el simulador según comparadores_simulador del fondo.",
+    "paletas": {
+      "verde": {
+        "forest": "#1A3D2B",
+        "grove": "#2D6A4F",
+        "leaf": "#40916C",
+        "mint": "#74C69D",
+        "pale": "#D8F3DC",
+        "uso": "Renta Fija UF"
+      },
+      "azul": {
+        "forest": "#1A3D5C",
+        "grove": "#1D4E89",
+        "leaf": "#2E86C1",
+        "mint": "#7FB3D3",
+        "pale": "#D6EAF8",
+        "uso": "Renta Fija CLP / USD"
+      },
+      "indigo": {
+        "forest": "#2D1A5C",
+        "grove": "#4A3080",
+        "leaf": "#7B5EA7",
+        "mint": "#A89CC8",
+        "pale": "#E8E4F3",
+        "uso": "Renta Variable"
+      },
+      "teal": {
+        "forest": "#1A3D3D",
+        "grove": "#2D6A6A",
+        "leaf": "#40918C",
+        "mint": "#74C6C3",
+        "pale": "#D8F3F2",
+        "uso": "Balanceados / Mixtos"
+      },
+      "gris": {
+        "forest": "#2C3E50",
+        "grove": "#4A5568",
+        "leaf": "#718096",
+        "mint": "#A0AEC0",
+        "pale": "#EDF2F7",
+        "uso": "Monetarios / Money Market"
+      },
+      "ambar": {
+        "forest": "#78350F",
+        "grove": "#92400E",
+        "leaf": "#B45309",
+        "mint": "#D97706",
+        "pale": "#FEF3C7",
+        "uso": "Fondos de Inversión alternativos"
+      }
+    },
+    "categorias": {
+      "FM_RF_UF": "Fondo Mutuo · Renta Fija UF",
+      "FM_RF_CLP": "Fondo Mutuo · Renta Fija CLP",
+      "FM_RF_USD": "Fondo Mutuo · Renta Fija USD",
+      "FM_RF_INTL": "Fondo Mutuo · Renta Fija Internacional",
+      "FM_RV_CL": "Fondo Mutuo · Renta Variable Chile",
+      "FM_RV_USA": "Fondo Mutuo · Renta Variable EE.UU.",
+      "FM_RV_LATAM": "Fondo Mutuo · Renta Variable Latam",
+      "FM_RV_INTL": "Fondo Mutuo · Renta Variable Internacional",
+      "FM_MM": "Fondo Mutuo · Money Market",
+      "FM_BAL": "Fondo Mutuo · Balanceado",
+      "FM_CAD": "Fondo Mutuo · Cuenta Activa",
+      "FM_CON": "Fondo Mutuo · Consorcio Dinámico",
+      "FI_RF": "Fondo de Inversión · Renta Fija",
+      "FI_RV": "Fondo de Inversión · Renta Variable",
+      "FI_ALT": "Fondo de Inversión · Alternativo"
+    }
+  },
+  "fondos": [
+    {
+      "_id": "ahorro-uf",
+      "_paleta": "verde",
+      "_categoria": "FM_RF_UF",
+      "_categoria_display": "Renta Fija · Denominado en Unidades de Fomento",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Ahorro UF",
+        "nombre_corto": "Ahorro UF",
+        "run": "10461",
+        "nemo_dcv": "CFMAUFA",
+        "bloomberg": "LVAHUFA CI Equity",
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": "BCU 1 Año",
+        "horizonte_minimo": "desde 6 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": "Javier Marshall",
+        "auditores": "KPMG",
+        "remuneracion": "Hasta 1,90% IVA inc.",
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 2,
+        "escala_max": 7,
+        "descripcion": "Bajo"
+      },
+      "ratings_externos": [
+        {
+          "agencia": "S&P Global",
+          "rating": "AMP-1",
+          "tipo": "administradora"
+        },
+        {
+          "signatario": "PRI",
+          "tipo": "esg"
+        }
+      ],
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": "$214.514M",
+        "patrimonio_mm_clp": 214514,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 1.89,
+          "1m": 1.34,
+          "3m": 1.9,
+          "6m": 2.1,
+          "12m": 4.29,
+          "2y": 11.51
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": 1.4,
+          "duracion_anios": 0.9,
+          "volatilidad_pct": 0.6,
+          "rating_promedio": "AA+",
+          "expo_uf_pct": 75.7,
+          "tac_pct": 1.61,
+          "tac_industria_pct": 1.35
+        },
+        "composicion": [
+          {
+            "nombre": "Bonos Bancarios",
+            "pct": 47.8
+          },
+          {
+            "nombre": "Bonos Corporativos",
+            "pct": 25.1
+          },
+          {
+            "nombre": "Depósitos",
+            "pct": 24
+          },
+          {
+            "nombre": "Gobierno",
+            "pct": 3.2
+          }
+        ],
+        "clasificacion_crediticia": [
+          {
+            "rating": "AAA",
+            "pct": 3.2
+          },
+          {
+            "rating": "AA+",
+            "pct": 46.1
+          },
+          {
+            "rating": "AA",
+            "pct": 32.5
+          },
+          {
+            "rating": "AA-",
+            "pct": 18.2
+          }
+        ],
+        "principales_emisores": [
+          {
+            "nombre": "Banco Estado",
+            "pct": 18.4
+          },
+          {
+            "nombre": "BCI",
+            "pct": 14.2
+          },
+          {
+            "nombre": "Banco de Chile",
+            "pct": 12.1
+          },
+          {
+            "nombre": "Santander",
+            "pct": 10.8
+          },
+          {
+            "nombre": "Scotiabank",
+            "pct": 8.3
+          },
+          {
+            "nombre": "BCU / Gobierno",
+            "pct": 3.2
+          },
+          {
+            "nombre": "Otros",
+            "pct": 33
+          }
+        ],
+        "base_100_actual": 120.3256,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2023": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": 0.41,
+          "jun": 0.75,
+          "jul": 0.73,
+          "ago": 0.99,
+          "sep": 0.04,
+          "oct": 0.52,
+          "nov": 0.2,
+          "dic": 1.25,
+          "anual": 5.24
+        },
+        "2024": {
+          "ene": 0.56,
+          "feb": 0.58,
+          "mar": 0.87,
+          "abr": 0.63,
+          "may": 0.53,
+          "jun": 0.68,
+          "jul": 0.61,
+          "ago": 0.68,
+          "sep": 0.51,
+          "oct": -0.08,
+          "nov": 0.89,
+          "dic": 0.38,
+          "anual": 7.81
+        },
+        "2025": {
+          "ene": 0.72,
+          "feb": 0.53,
+          "mar": 0.36,
+          "abr": 0.54,
+          "may": 0.12,
+          "jun": 0.19,
+          "jul": 0.27,
+          "ago": 0.49,
+          "sep": 0.42,
+          "oct": 0.26,
+          "nov": -0.05,
+          "dic": -0.01,
+          "anual": 4.04
+        },
+        "2026": {
+          "ene": 0.16,
+          "feb": 0.38,
+          "mar": 1.33,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 1.89
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true,
+        "nota_apv": "Serie APV-AP-APVC remuneración 0,90% exenta IVA"
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": 1.9,
+          "tac_pct": 1.61,
+          "apv": false,
+          "monto_minimo": "Sin mínimo"
+        },
+        {
+          "serie": "APV-AP-APVC",
+          "remuneracion_pct": 0.9,
+          "tac_pct": null,
+          "apv": true,
+          "monto_minimo": "Sin mínimo"
+        }
+      ],
+      "comparadores_simulador": [
+        {
+          "nombre": "Ahorro a Plazo",
+          "rent_anual_ref_pct": 3.9,
+          "color": "#B45309"
+        },
+        {
+          "nombre": "Ahorro Capital",
+          "rent_anual_ref_pct": 5.6,
+          "color": "#4B5563"
+        }
+      ],
+      "objetivo": "Mínimo 60% en deuda local denominada en Unidades de Fomento (UF), duración máxima de cartera 365 días. Tolerancia al riesgo: baja."
+    },
+    {
+      "_id": "ahorro-a-plazo",
+      "_paleta": "azul",
+      "_categoria": "FM_RF_CLP",
+      "_categoria_display": "Renta Fija · Corto Plazo Pesos",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Ahorro a Plazo",
+        "nombre_corto": "Ahorro a Plazo",
+        "run": "8755",
+        "nemo_dcv": "CFMLVAPLAZ",
+        "bloomberg": "LARVIAP CI Equity",
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": "TAB 30 días (duración máx 365 días)",
+        "horizonte_minimo": "Desde 6 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": "Javier Marshall",
+        "auditores": "KPMG",
+        "remuneracion": "Hasta 1,60% anual IVA incluido",
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 2,
+        "escala_max": 7,
+        "descripcion": "Bajo"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": "$137.838 millones CLP",
+        "patrimonio_mm_clp": 137838,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 1.26,
+          "1m": 0.69,
+          "3m": 1.26,
+          "6m": 1.83,
+          "12m": 3.9,
+          "2y": 10.06,
+          "3y": 19.13,
+          "5y": 31.35
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": 4.9,
+          "duracion_anios": 0.7,
+          "volatilidad_pct": 0.3,
+          "rating_promedio": "AA+",
+          "expo_uf_pct": 38.7,
+          "tac_pct": 1.71,
+          "tac_industria_pct": 1.35
+        },
+        "composicion": [
+          {
+            "nombre": "Depósitos",
+            "pct": 49.4
+          },
+          {
+            "nombre": "Bonos Bancarios",
+            "pct": 29.7
+          },
+          {
+            "nombre": "Bonos Corporativos",
+            "pct": 20.9
+          }
+        ],
+        "clasificacion_crediticia": [
+          {
+            "rating": "N-1",
+            "pct": 30
+          },
+          {
+            "rating": "AAA",
+            "pct": 25
+          },
+          {
+            "rating": "AA",
+            "pct": 25
+          },
+          {
+            "rating": "Gobierno",
+            "pct": 20
+          }
+        ],
+        "principales_emisores": [
+          {
+            "nombre": "Banco Central de Chile",
+            "pct": 19.7
+          },
+          {
+            "nombre": "Scotiabank Chile",
+            "pct": 14.3
+          },
+          {
+            "nombre": "Banco Itaú CorpBanca",
+            "pct": 12.2
+          },
+          {
+            "nombre": "Banco Santander Chile",
+            "pct": 8.5
+          },
+          {
+            "nombre": "Banco Security",
+            "pct": 6.6
+          },
+          {
+            "nombre": "BCI",
+            "pct": 5.6
+          },
+          {
+            "nombre": "Banco de Chile",
+            "pct": 3.7
+          },
+          {
+            "nombre": "Banco Consorcio",
+            "pct": 3.5
+          },
+          {
+            "nombre": "Caja Compensación Los Andes",
+            "pct": 2.9
+          },
+          {
+            "nombre": "Costanera Norte SA",
+            "pct": 2.4
+          }
+        ],
+        "base_100_actual": 131.3486,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": 0.25,
+          "feb": 1,
+          "mar": 0.67,
+          "abr": 1.6,
+          "may": 0.83,
+          "jun": 0.83,
+          "jul": 1.1,
+          "ago": 0.16,
+          "sep": 0.23,
+          "oct": 0.86,
+          "nov": 0.95,
+          "dic": 0.73,
+          "anual": 9.62
+        },
+        "2023": {
+          "ene": 0.87,
+          "feb": 0.58,
+          "mar": 0.63,
+          "abr": 0.48,
+          "may": 0.52,
+          "jun": 1.07,
+          "jul": 1.05,
+          "ago": 0.4,
+          "sep": 0.22,
+          "oct": 0.51,
+          "nov": 0.69,
+          "dic": 0.99,
+          "anual": 8.31
+        },
+        "2024": {
+          "ene": 0.68,
+          "feb": 0.63,
+          "mar": 0.71,
+          "abr": 0.56,
+          "may": 0.57,
+          "jun": 0.52,
+          "jul": 0.61,
+          "ago": 0.58,
+          "sep": 0.58,
+          "oct": 0.08,
+          "nov": 0.61,
+          "dic": 0.36,
+          "anual": 6.69
+        },
+        "2025": {
+          "ene": 0.44,
+          "feb": 0.42,
+          "mar": 0.44,
+          "abr": 0.49,
+          "may": 0.22,
+          "jun": 0.25,
+          "jul": 0.33,
+          "ago": 0.39,
+          "sep": 0.34,
+          "oct": 0.25,
+          "nov": 0.18,
+          "dic": 0.13,
+          "anual": 3.94
+        },
+        "2026": {
+          "ene": 0.24,
+          "feb": 0.33,
+          "mar": 0.69,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 1.26
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        },
+        {
+          "serie": "APV-AP-APVC",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": true
+        }
+      ],
+      "comparadores_simulador": [
+        {
+          "nombre": "Ahorro UF",
+          "rent_anual_ref_pct": 4.29,
+          "color": "#1A3D2B"
+        },
+        {
+          "nombre": "Ahorro Capital",
+          "rent_anual_ref_pct": 5.6,
+          "color": "#4B5563"
+        }
+      ],
+      "objetivo": "Invertir en instrumentos de deuda local de corto y mediano plazo con duración máxima de cartera de 365 días."
+    },
+    {
+      "_id": "ahorro-capital",
+      "_paleta": "verde",
+      "_categoria": "FM_RF_UF",
+      "_categoria_display": "Renta Fija · Largo Plazo UF",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Ahorro Capital",
+        "nombre_corto": "Ahorro Capital",
+        "run": "8263",
+        "nemo_dcv": "CFMLVAHCAP",
+        "bloomberg": "LARVACA CI Equity",
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": "BCU 5 Años (duración 366–1460 días)",
+        "horizonte_minimo": "Desde 1 año",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": "Javier Marshall",
+        "auditores": "KPMG",
+        "remuneracion": "Hasta 1,85% anual IVA incluido",
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 3,
+        "escala_max": 7,
+        "descripcion": "Medio Bajo"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": "$423.148 millones CLP",
+        "patrimonio_mm_clp": 423148,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 2.05,
+          "1m": 1.05,
+          "3m": 2.05,
+          "6m": 2.72,
+          "12m": 5.6,
+          "2y": 14.58,
+          "3y": 20.7,
+          "5y": 30.16
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": 2.1,
+          "duracion_anios": 2.9,
+          "volatilidad_pct": 0.9,
+          "rating_promedio": "AA+",
+          "expo_uf_pct": 93,
+          "tac_pct": 1.96,
+          "tac_industria_pct": 1.35
+        },
+        "composicion": [
+          {
+            "nombre": "Bonos Bancarios",
+            "pct": 55.8
+          },
+          {
+            "nombre": "Bonos Corporativos",
+            "pct": 35.2
+          },
+          {
+            "nombre": "Gobierno",
+            "pct": 5.4
+          },
+          {
+            "nombre": "Depósitos",
+            "pct": 3.6
+          },
+          {
+            "nombre": "Letras Hipotecarias",
+            "pct": 0.1
+          }
+        ],
+        "clasificacion_crediticia": [
+          {
+            "rating": "AA",
+            "pct": 45
+          },
+          {
+            "rating": "A",
+            "pct": 15
+          },
+          {
+            "rating": "AAA",
+            "pct": 10
+          },
+          {
+            "rating": "BBB",
+            "pct": 10
+          },
+          {
+            "rating": "<BB",
+            "pct": 10
+          },
+          {
+            "rating": "Gobierno",
+            "pct": 5
+          },
+          {
+            "rating": "N-1",
+            "pct": 5
+          }
+        ],
+        "principales_emisores": [
+          {
+            "nombre": "Banco de Chile",
+            "pct": 17.4
+          },
+          {
+            "nombre": "Scotiabank Chile",
+            "pct": 12.2
+          },
+          {
+            "nombre": "Banco Itaú CorpBanca",
+            "pct": 6.4
+          },
+          {
+            "nombre": "Tesorería de Chile",
+            "pct": 5.4
+          },
+          {
+            "nombre": "BCI",
+            "pct": 5
+          },
+          {
+            "nombre": "Banco Internacional",
+            "pct": 4.5
+          },
+          {
+            "nombre": "Banco Santander Chile",
+            "pct": 4.3
+          },
+          {
+            "nombre": "Banco Central de Chile",
+            "pct": 3.5
+          },
+          {
+            "nombre": "Costanera Norte SA",
+            "pct": 2
+          },
+          {
+            "nombre": "Forum Servicios Finan. SA",
+            "pct": 1.8
+          }
+        ],
+        "base_100_actual": 130.1629,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": 0.18,
+          "feb": 1.45,
+          "mar": 1.34,
+          "abr": 2.42,
+          "may": 0.7,
+          "jun": 1.11,
+          "jul": 1.56,
+          "ago": -0.9,
+          "sep": -1.19,
+          "oct": 0.72,
+          "nov": 2.26,
+          "dic": 0.89,
+          "anual": 10.99
+        },
+        "2023": {
+          "ene": 0.59,
+          "feb": 0.56,
+          "mar": 0.93,
+          "abr": -0.58,
+          "may": -0.52,
+          "jun": 1.26,
+          "jul": 0.52,
+          "ago": 0.31,
+          "sep": -1.19,
+          "oct": -0.52,
+          "nov": 2.41,
+          "dic": 1.86,
+          "anual": 5.71
+        },
+        "2024": {
+          "ene": 0.27,
+          "feb": 0.45,
+          "mar": 1,
+          "abr": 0.21,
+          "may": 0.99,
+          "jun": 0.62,
+          "jul": 1.36,
+          "ago": 1.28,
+          "sep": 1.33,
+          "oct": -0.99,
+          "nov": 1.14,
+          "dic": 0.09,
+          "anual": 8.01
+        },
+        "2025": {
+          "ene": 0.85,
+          "feb": 0.85,
+          "mar": 0.49,
+          "abr": 0.88,
+          "may": -0.06,
+          "jun": 0.3,
+          "jul": 0.53,
+          "ago": 0.67,
+          "sep": 0.46,
+          "oct": 0.24,
+          "nov": 0.21,
+          "dic": 0.19,
+          "anual": 5.75
+        },
+        "2026": {
+          "ene": 0.44,
+          "feb": 0.55,
+          "mar": 1.05,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 2.05
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        },
+        {
+          "serie": "APV-AP-APVC",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": true
+        }
+      ],
+      "comparadores_simulador": [
+        {
+          "nombre": "Ahorro UF",
+          "rent_anual_ref_pct": 4.29,
+          "color": "#1A3D2B"
+        },
+        {
+          "nombre": "Ahorro a Plazo",
+          "rent_anual_ref_pct": 3.9,
+          "color": "#B45309"
+        }
+      ],
+      "objetivo": "Invertir en instrumentos de deuda de corto, mediano y largo plazo. Duración mínima 366 días, máxima 1460 días."
+    },
+    {
+      "_id": "ahorro-corporativo",
+      "_paleta": "azul",
+      "_categoria": "FM_RF_CLP",
+      "_categoria_display": "Renta Fija · Corporativa Pesos",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Ahorro Corporativo",
+        "nombre_corto": "Ahorro Corporativo",
+        "run": "8315",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 12 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 3,
+        "escala_max": 7,
+        "descripcion": "Bajo-Medio"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 2.09,
+          "1m": 0.97,
+          "3m": 2.1,
+          "6m": 3.09,
+          "12m": 6.56,
+          "2y": 16.56
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": 1.35
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 130.5573,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": 0.1,
+          "feb": 1.61,
+          "mar": 0.69,
+          "abr": 2.48,
+          "may": 0.93,
+          "jun": 1.02,
+          "jul": 1.32,
+          "ago": -1.3,
+          "sep": -1.53,
+          "oct": 0.84,
+          "nov": 3.08,
+          "dic": 0.7,
+          "anual": 12.43
+        },
+        "2023": {
+          "ene": 0.02,
+          "feb": 0.07,
+          "mar": 1.44,
+          "abr": -0.59,
+          "may": -0.98,
+          "jun": 1.29,
+          "jul": 0.16,
+          "ago": -0.19,
+          "sep": -1.61,
+          "oct": -1.2,
+          "nov": 3.46,
+          "dic": 2,
+          "anual": 3.87
+        },
+        "2024": {
+          "ene": 0.04,
+          "feb": -0.2,
+          "mar": 0.69,
+          "abr": 0,
+          "may": 1.21,
+          "jun": 0.56,
+          "jul": 1.68,
+          "ago": 1.53,
+          "sep": 2.02,
+          "oct": -1.68,
+          "nov": 1.3,
+          "dic": -0.4,
+          "anual": 8.13
+        },
+        "2025": {
+          "ene": 0.67,
+          "feb": 0.98,
+          "mar": 0.67,
+          "abr": 0.9,
+          "may": -0.19,
+          "jun": 0.46,
+          "jul": 0.77,
+          "ago": 0.52,
+          "sep": 0.53,
+          "oct": 0.1,
+          "nov": 0.47,
+          "dic": 0.37,
+          "anual": 6.83
+        },
+        "2026": {
+          "ene": 0.57,
+          "feb": 0.54,
+          "mar": 0.95,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 2.09
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Inversión en bonos corporativos y bancarios de mediano plazo. Mayor retorno potencial que depósitos, con riesgo crediticio moderado."
+    },
+    {
+      "_id": "ahorro-estrategico",
+      "_paleta": "teal",
+      "_categoria": "FM_BAL",
+      "_categoria_display": "Balanceado · Mixto Moderado",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Ahorro Estratégico",
+        "nombre_corto": "Ahorro Estratégico",
+        "run": "8240",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 24 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 4,
+        "escala_max": 7,
+        "descripcion": "Medio"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 1.96,
+          "1m": 0.7,
+          "3m": 1.97,
+          "6m": 3.15,
+          "12m": 5.47,
+          "2y": 17
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 129.341,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": 0.16,
+          "feb": 1.72,
+          "mar": 0.69,
+          "abr": 2.53,
+          "may": 1.09,
+          "jun": 1.18,
+          "jul": 1.43,
+          "ago": -1.1,
+          "sep": -1.37,
+          "oct": 0.88,
+          "nov": 3.71,
+          "dic": 0.61,
+          "anual": 14.3
+        },
+        "2023": {
+          "ene": 0.07,
+          "feb": -0.08,
+          "mar": 1.56,
+          "abr": -0.56,
+          "may": -0.85,
+          "jun": 1.29,
+          "jul": 0.21,
+          "ago": -0.06,
+          "sep": -2.11,
+          "oct": -1.38,
+          "nov": 2.78,
+          "dic": 2.03,
+          "anual": 2.81
+        },
+        "2024": {
+          "ene": 0.14,
+          "feb": -0.18,
+          "mar": 0.37,
+          "abr": 0.02,
+          "may": 1.48,
+          "jun": 0.75,
+          "jul": 1.68,
+          "ago": 1.75,
+          "sep": 2.38,
+          "oct": -1.55,
+          "nov": 1.2,
+          "dic": -0.19,
+          "anual": 9.15
+        },
+        "2025": {
+          "ene": 0.8,
+          "feb": 0.97,
+          "mar": 0.77,
+          "abr": 0.39,
+          "may": -0.29,
+          "jun": 0.35,
+          "jul": 0.5,
+          "ago": 0.39,
+          "sep": 0.56,
+          "oct": 0.28,
+          "nov": 0.41,
+          "dic": 0.43,
+          "anual": 6.12
+        },
+        "2026": {
+          "ene": 0.75,
+          "feb": 0.5,
+          "mar": 0.68,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 1.96
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Portafolio diversificado con exposición mayoritaria en renta fija y componente accionario moderado. Orientado a crecimiento moderado de largo plazo."
+    },
+    {
+      "_id": "portfolio-lider",
+      "_paleta": "teal",
+      "_categoria": "FM_BAL",
+      "_categoria_display": "Balanceado · Multi-Activo",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Portfolio Líder",
+        "nombre_corto": "Portfolio Líder",
+        "run": "8245",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 36 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 5,
+        "escala_max": 7,
+        "descripcion": "Medio-Alto"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 4.39,
+          "1m": -1.33,
+          "3m": 4.39,
+          "6m": 5.15,
+          "12m": 15.45,
+          "2y": 17.57
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 145.7457,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -4.03,
+          "feb": -1.01,
+          "mar": 0.17,
+          "abr": 2.34,
+          "may": -0.47,
+          "jun": 3.45,
+          "jul": -0.28,
+          "ago": -0.13,
+          "sep": -0.67,
+          "oct": 0.99,
+          "nov": 1.44,
+          "dic": -2.04,
+          "anual": -0.71
+        },
+        "2023": {
+          "ene": 0.41,
+          "feb": -0.72,
+          "mar": -0.55,
+          "abr": 0.42,
+          "may": -0.08,
+          "jun": 2.06,
+          "jul": 3.65,
+          "ago": -0.85,
+          "sep": -0.52,
+          "oct": -1.88,
+          "nov": 2.36,
+          "dic": 3.43,
+          "anual": 6.76
+        },
+        "2024": {
+          "ene": 1.87,
+          "feb": 2.21,
+          "mar": 1.22,
+          "abr": -2.61,
+          "may": -0.58,
+          "jun": 0.99,
+          "jul": 1.18,
+          "ago": -0.41,
+          "sep": 0.34,
+          "oct": 1.29,
+          "nov": 1.73,
+          "dic": -0.4,
+          "anual": 7.32
+        },
+        "2025": {
+          "ene": 1.07,
+          "feb": -0.9,
+          "mar": 0.7,
+          "abr": 1.17,
+          "may": 0.81,
+          "jun": 1.04,
+          "jul": 2.37,
+          "ago": 2.8,
+          "sep": 2.37,
+          "oct": 0.52,
+          "nov": -0.24,
+          "dic": 0.5,
+          "anual": 11.55
+        },
+        "2026": {
+          "ene": 3.93,
+          "feb": 1.81,
+          "mar": -1.33,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 4.39
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Fondo multi-activo con exposición a renta fija nacional e internacional y renta variable global. Gestión activa con visión de largo plazo."
+    },
+    {
+      "_id": "enfoque",
+      "_paleta": "teal",
+      "_categoria": "FM_BAL",
+      "_categoria_display": "Balanceado · Enfoque",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Enfoque",
+        "nombre_corto": "Enfoque",
+        "run": "8723",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 24 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 4,
+        "escala_max": 7,
+        "descripcion": "Medio"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 0.66,
+          "1m": -6.57,
+          "3m": 0.65,
+          "6m": 18.98,
+          "12m": 47.71,
+          "2y": 85.25
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 258.7938,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": 6.27,
+          "feb": -2.21,
+          "mar": 10.72,
+          "abr": -5.29,
+          "may": 13.25,
+          "jun": -6.73,
+          "jul": 4.31,
+          "ago": 4.45,
+          "sep": -4.79,
+          "oct": 2.21,
+          "nov": 1.89,
+          "dic": 1.45,
+          "anual": 24.31
+        },
+        "2023": {
+          "ene": 1.15,
+          "feb": 1.19,
+          "mar": -0.42,
+          "abr": 2.4,
+          "may": 3.66,
+          "jun": 5.94,
+          "jul": 9.35,
+          "ago": -3.47,
+          "sep": -3.97,
+          "oct": -6.68,
+          "nov": 6.36,
+          "dic": 7.29,
+          "anual": 25.98
+        },
+        "2024": {
+          "ene": -1.87,
+          "feb": 5.13,
+          "mar": 0.66,
+          "abr": -1.74,
+          "may": 2.13,
+          "jun": -2.02,
+          "jul": 2.22,
+          "ago": -1.12,
+          "sep": -0.24,
+          "oct": 2.2,
+          "nov": 1.82,
+          "dic": 2.66,
+          "anual": 10.61
+        },
+        "2025": {
+          "ene": 8.25,
+          "feb": 3.56,
+          "mar": 5.82,
+          "abr": 8.03,
+          "may": 3.24,
+          "jun": 0.99,
+          "jul": -2.36,
+          "ago": 8.67,
+          "sep": 3.33,
+          "oct": 6.26,
+          "nov": 7,
+          "dic": 4.34,
+          "anual": 74.05
+        },
+        "2026": {
+          "ene": 14.32,
+          "feb": -5.75,
+          "mar": -6.55,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 0.66
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Fondo balanceado con exposición concentrada en activos seleccionados de alta convicción. Gestión activa con enfoque en retorno ajustado por riesgo."
+    },
+    {
+      "_id": "proteccion",
+      "_paleta": "verde",
+      "_categoria": "FM_RF_UF",
+      "_categoria_display": "Renta Fija · Protección Inflación",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Protección",
+        "nombre_corto": "Protección",
+        "run": "8788",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 12 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 3,
+        "escala_max": 7,
+        "descripcion": "Bajo-Medio"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 1.91,
+          "1m": 0.41,
+          "3m": 1.91,
+          "6m": 2.56,
+          "12m": 8.8,
+          "2y": 11.14
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 116.2674,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -0.63,
+          "feb": 0.53,
+          "mar": 0.76,
+          "abr": 1.61,
+          "may": 1.29,
+          "jun": 1.54,
+          "jul": 0.48,
+          "ago": -0.54,
+          "sep": -1.25,
+          "oct": 0.44,
+          "nov": 1.4,
+          "dic": -0.04,
+          "anual": 6.03
+        },
+        "2023": {
+          "ene": 0.81,
+          "feb": -0.7,
+          "mar": 0.28,
+          "abr": -0.36,
+          "may": -0.24,
+          "jun": 1.6,
+          "jul": 0.83,
+          "ago": -0.7,
+          "sep": -2.75,
+          "oct": -1.42,
+          "nov": 3.91,
+          "dic": 1.06,
+          "anual": 3.28
+        },
+        "2024": {
+          "ene": -0.8,
+          "feb": 0.15,
+          "mar": 0.99,
+          "abr": -1.8,
+          "may": -0.35,
+          "jun": 0.41,
+          "jul": 1.04,
+          "ago": 0.29,
+          "sep": 0.94,
+          "oct": -0.52,
+          "nov": 1.16,
+          "dic": 0.1,
+          "anual": 1.89
+        },
+        "2025": {
+          "ene": 0.89,
+          "feb": -0.23,
+          "mar": 0.4,
+          "abr": 0.42,
+          "may": 0.68,
+          "jun": 1.11,
+          "jul": 1.6,
+          "ago": 1.44,
+          "sep": 1.07,
+          "oct": -0.04,
+          "nov": 0.57,
+          "dic": 0.26,
+          "anual": 7.9
+        },
+        "2026": {
+          "ene": 1.39,
+          "feb": 0.11,
+          "mar": 0.4,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 1.91
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Inversión en instrumentos reajustables orientada a la preservación del poder adquisitivo real del capital frente a la inflación."
+    },
+    {
+      "_id": "monetario",
+      "_paleta": "gris",
+      "_categoria": "FM_MM",
+      "_categoria_display": "Money Market · Pesos",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Monetario",
+        "nombre_corto": "Monetario",
+        "run": "8177",
+        "nemo_dcv": "CFMLVCASHA",
+        "bloomberg": "IVSXCSH CI Equity",
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": "Duración máx 90 días",
+        "horizonte_minimo": "Desde 1 día",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": "Iván Álvarez",
+        "auditores": "KPMG",
+        "remuneracion": "Hasta 3,00% anual IVA incluido",
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 1,
+        "escala_max": 7,
+        "descripcion": "Muy Bajo"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": "$347.737 millones CLP",
+        "patrimonio_mm_clp": 347737,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 0.91,
+          "1m": 0.31,
+          "3m": 0.91,
+          "6m": 1.88,
+          "12m": 3.98,
+          "2y": 9.07,
+          "3y": 18.37,
+          "5y": 30.03
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": 3.7,
+          "duracion_anios": 0.2,
+          "volatilidad_pct": 0,
+          "rating_promedio": "AAA",
+          "expo_uf_pct": 8.8,
+          "tac_pct": 1.07,
+          "tac_industria_pct": 1.35
+        },
+        "composicion": [
+          {
+            "nombre": "CLP",
+            "pct": 91.2
+          },
+          {
+            "nombre": "UF",
+            "pct": 8.8
+          }
+        ],
+        "clasificacion_crediticia": [
+          {
+            "rating": "AAA",
+            "pct": 50
+          },
+          {
+            "rating": "Gobierno",
+            "pct": 20
+          },
+          {
+            "rating": "N-1",
+            "pct": 15
+          },
+          {
+            "rating": "AA",
+            "pct": 15
+          }
+        ],
+        "principales_emisores": [
+          {
+            "nombre": "Banco Central de Chile",
+            "pct": 24.4
+          },
+          {
+            "nombre": "Banco Santander Chile",
+            "pct": 16.9
+          },
+          {
+            "nombre": "BCI",
+            "pct": 15.4
+          },
+          {
+            "nombre": "Banco Itaú CorpBanca",
+            "pct": 14.7
+          },
+          {
+            "nombre": "Banco de Chile",
+            "pct": 10.2
+          },
+          {
+            "nombre": "Banco Bice",
+            "pct": 4.3
+          },
+          {
+            "nombre": "Banco BTG Pactual SA",
+            "pct": 3.8
+          },
+          {
+            "nombre": "Scotiabank Chile",
+            "pct": 3.8
+          },
+          {
+            "nombre": "Banco Security",
+            "pct": 2.4
+          },
+          {
+            "nombre": "Banco Consorcio",
+            "pct": 1.4
+          }
+        ],
+        "base_100_actual": 130.0315,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": 0.19,
+          "feb": 0.27,
+          "mar": 0.35,
+          "abr": 0.48,
+          "may": 0.54,
+          "jun": 0.59,
+          "jul": 0.64,
+          "ago": 0.7,
+          "sep": 0.7,
+          "oct": 0.77,
+          "nov": 0.79,
+          "dic": 0.8,
+          "anual": 7.03
+        },
+        "2023": {
+          "ene": 0.78,
+          "feb": 0.7,
+          "mar": 0.78,
+          "abr": 0.75,
+          "may": 0.78,
+          "jun": 0.75,
+          "jul": 0.78,
+          "ago": 0.76,
+          "sep": 0.7,
+          "oct": 0.7,
+          "nov": 0.65,
+          "dic": 0.64,
+          "anual": 9.16
+        },
+        "2024": {
+          "ene": 0.61,
+          "feb": 0.52,
+          "mar": 0.54,
+          "abr": 0.48,
+          "may": 0.48,
+          "jun": 0.42,
+          "jul": 0.42,
+          "ago": 0.41,
+          "sep": 0.39,
+          "oct": 0.39,
+          "nov": 0.36,
+          "dic": 0.37,
+          "anual": 5.53
+        },
+        "2025": {
+          "ene": 0.36,
+          "feb": 0.33,
+          "mar": 0.37,
+          "abr": 0.35,
+          "may": 0.36,
+          "jun": 0.33,
+          "jul": 0.34,
+          "ago": 0.34,
+          "sep": 0.32,
+          "oct": 0.33,
+          "nov": 0.31,
+          "dic": 0.32,
+          "anual": 4.15
+        },
+        "2026": {
+          "ene": 0.32,
+          "feb": 0.28,
+          "mar": 0.31,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 0.91
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": false,
+        "art107": false,
+        "art108": false
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Maximizar retorno en instrumentos de deuda de corto plazo con duración menor o igual a 90 días."
+    },
+    {
+      "_id": "money-market",
+      "_paleta": "gris",
+      "_categoria": "FM_MM",
+      "_categoria_display": "Money Market · Premium",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Money Market",
+        "nombre_corto": "Money Market",
+        "run": "8606",
+        "nemo_dcv": "CFMLVMMAKA",
+        "bloomberg": "LVMOMAA CI Equity",
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "USD",
+        "benchmark": "Duración máx 90 días en USD",
+        "horizonte_minimo": "Desde 1 día",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": "Iván Álvarez",
+        "auditores": "KPMG",
+        "remuneracion": "Hasta 2,38% anual IVA incluido",
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 1,
+        "escala_max": 7,
+        "descripcion": "Muy Bajo"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": "USD $171 millones",
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 0.71,
+          "1m": 0.23,
+          "3m": 0.71,
+          "6m": 1.47,
+          "12m": 3.02,
+          "2y": 6.81,
+          "3y": 11.17,
+          "5y": 13.63
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": 4.3,
+          "duracion_anios": 0.1,
+          "volatilidad_pct": 0,
+          "rating_promedio": "A",
+          "expo_uf_pct": 0,
+          "tac_pct": 1.41,
+          "tac_industria_pct": 1.35
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [
+          {
+            "rating": "A",
+            "pct": 100
+          }
+        ],
+        "principales_emisores": [
+          {
+            "nombre": "HSBC Bank Chile",
+            "pct": 18.7
+          },
+          {
+            "nombre": "Banco Consorcio",
+            "pct": 11.8
+          },
+          {
+            "nombre": "Banco del Estado de Chile",
+            "pct": 10.8
+          },
+          {
+            "nombre": "Banco de Chile",
+            "pct": 9.7
+          },
+          {
+            "nombre": "Banco BTG Pactual SA",
+            "pct": 9.4
+          },
+          {
+            "nombre": "BCI",
+            "pct": 7.9
+          },
+          {
+            "nombre": "Banco Santander Chile",
+            "pct": 7.8
+          },
+          {
+            "nombre": "Scotiabank Chile",
+            "pct": 7.4
+          },
+          {
+            "nombre": "Banco Bice",
+            "pct": 7
+          },
+          {
+            "nombre": "Banco Itaú CorpBanca",
+            "pct": 5.7
+          }
+        ],
+        "base_100_actual": 113.6331,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": 0.01,
+          "feb": 0.01,
+          "mar": 0.02,
+          "abr": 0.03,
+          "may": 0.05,
+          "jun": 0.07,
+          "jul": 0.09,
+          "ago": 0.13,
+          "sep": 0.14,
+          "oct": 0.18,
+          "nov": 0.22,
+          "dic": 0.28,
+          "anual": 1.25
+        },
+        "2023": {
+          "ene": 0.32,
+          "feb": 0.29,
+          "mar": 0.32,
+          "abr": 0.36,
+          "may": 0.36,
+          "jun": 0.32,
+          "jul": 0.32,
+          "ago": 0.33,
+          "sep": 0.33,
+          "oct": 0.33,
+          "nov": 0.33,
+          "dic": 0.34,
+          "anual": 4.01
+        },
+        "2024": {
+          "ene": 0.34,
+          "feb": 0.32,
+          "mar": 0.34,
+          "abr": 0.33,
+          "may": 0.34,
+          "jun": 0.33,
+          "jul": 0.34,
+          "ago": 0.34,
+          "sep": 0.32,
+          "oct": 0.29,
+          "nov": 0.3,
+          "dic": 0.27,
+          "anual": 3.94
+        },
+        "2025": {
+          "ene": 0.27,
+          "feb": 0.23,
+          "mar": 0.25,
+          "abr": 0.24,
+          "may": 0.25,
+          "jun": 0.24,
+          "jul": 0.26,
+          "ago": 0.26,
+          "sep": 0.25,
+          "oct": 0.26,
+          "nov": 0.25,
+          "dic": 0.25,
+          "anual": 3.06
+        },
+        "2026": {
+          "ene": 0.26,
+          "feb": 0.22,
+          "mar": 0.23,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 0.71
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": false,
+        "art107": false,
+        "art108": false
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Invertir en instrumentos de deuda de emisores extranjeros y nacionales en dólares y pesos, duración máx 90 días."
+    },
+    {
+      "_id": "ahorro-dolar",
+      "_paleta": "azul",
+      "_categoria": "FM_RF_USD",
+      "_categoria_display": "Renta Fija · Denominado en Dólares",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Ahorro Dólar",
+        "nombre_corto": "Ahorro Dólar",
+        "run": "9221",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "USD",
+        "benchmark": "SOFR",
+        "horizonte_minimo": "desde 6 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 2,
+        "escala_max": 7,
+        "descripcion": "Bajo"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": -0.28,
+          "1m": -0.81,
+          "3m": -0.27,
+          "6m": 0.46,
+          "12m": 3.85,
+          "2y": 9.55
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 113.1832,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -0.55,
+          "feb": -0.58,
+          "mar": -0.55,
+          "abr": -0.74,
+          "may": 0.08,
+          "jun": -0.69,
+          "jul": 0.48,
+          "ago": 0.04,
+          "sep": -1.19,
+          "oct": 0.08,
+          "nov": 1.09,
+          "dic": 0.22,
+          "anual": -2.1
+        },
+        "2023": {
+          "ene": 0.82,
+          "feb": -0.33,
+          "mar": 0.49,
+          "abr": 0.46,
+          "may": 0.24,
+          "jun": 0,
+          "jul": 0.33,
+          "ago": 0.31,
+          "sep": -0.08,
+          "oct": 0.04,
+          "nov": 1.39,
+          "dic": 1.26,
+          "anual": 5.41
+        },
+        "2024": {
+          "ene": 0.27,
+          "feb": 0.11,
+          "mar": 0.42,
+          "abr": -0.04,
+          "may": 0.76,
+          "jun": 0.59,
+          "jul": 0.81,
+          "ago": 0.81,
+          "sep": 0.74,
+          "oct": -0.44,
+          "nov": 0.31,
+          "dic": -0.08,
+          "anual": 4.49
+        },
+        "2025": {
+          "ene": 0.7,
+          "feb": 0.73,
+          "mar": 0.45,
+          "abr": 0.08,
+          "may": 0.38,
+          "jun": 0.82,
+          "jul": 0.45,
+          "ago": 0.67,
+          "sep": 0.69,
+          "oct": 0.07,
+          "nov": 0.23,
+          "dic": 0.44,
+          "anual": 6.14
+        },
+        "2026": {
+          "ene": 0.45,
+          "feb": 0.07,
+          "mar": -0.84,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": -0.28
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Inversión en instrumentos de renta fija de corto y mediano plazo denominados en dólares. Cobertura de tipo de cambio y diversificación en USD."
+    },
+    {
+      "_id": "bonos-latam",
+      "_paleta": "azul",
+      "_categoria": "FM_RF_INTL",
+      "_categoria_display": "Renta Fija · Bonos Latinoamérica",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Bonos Latam",
+        "nombre_corto": "Bonos Latam",
+        "run": "8502",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": "JPM CEMBI Latam",
+        "horizonte_minimo": "desde 12 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 4,
+        "escala_max": 7,
+        "descripcion": "Medio"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": -0.63,
+          "1m": -1.68,
+          "3m": -0.64,
+          "6m": 0.48,
+          "12m": 4.83,
+          "2y": 12.15
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 113.3663,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -1.63,
+          "feb": -1.96,
+          "mar": -0.31,
+          "abr": -2.16,
+          "may": -1.61,
+          "jun": -4.29,
+          "jul": -0.51,
+          "ago": 1.22,
+          "sep": -4.7,
+          "oct": -0.82,
+          "nov": 4.66,
+          "dic": 2.3,
+          "anual": -8.79
+        },
+        "2023": {
+          "ene": 2.94,
+          "feb": -2.04,
+          "mar": -0.94,
+          "abr": 0.38,
+          "may": 0.01,
+          "jun": 1.97,
+          "jul": 1.85,
+          "ago": -0.6,
+          "sep": -1.58,
+          "oct": -2.07,
+          "nov": 4.25,
+          "dic": 3.54,
+          "anual": 7.78
+        },
+        "2024": {
+          "ene": -0.1,
+          "feb": 1.15,
+          "mar": 1.42,
+          "abr": -0.85,
+          "may": 0.95,
+          "jun": 0.97,
+          "jul": 1.4,
+          "ago": 1.63,
+          "sep": 1.31,
+          "oct": -1.1,
+          "nov": 0.55,
+          "dic": -0.46,
+          "anual": 7.51
+        },
+        "2025": {
+          "ene": 1.04,
+          "feb": 1.35,
+          "mar": -0.17,
+          "abr": -1.15,
+          "may": 0.6,
+          "jun": 1.58,
+          "jul": 1.05,
+          "ago": 1.26,
+          "sep": 0.75,
+          "oct": 0.54,
+          "nov": -0.26,
+          "dic": 0.78,
+          "anual": 7.86
+        },
+        "2026": {
+          "ene": 1.03,
+          "feb": 0.05,
+          "mar": -1.68,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": -0.63
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Inversión en bonos corporativos y soberanos de emisores latinoamericanos denominados en USD. Exposición al crédito regional de alta calidad."
+    },
+    {
+      "_id": "ahorro-activo",
+      "_paleta": "verde",
+      "_categoria": "FM_RF_UF",
+      "_categoria_display": "Renta Fija · Ahorro Activo UF",
+      "_estado": "pendiente_datos",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Ahorro Activo",
+        "nombre_corto": "Ahorro Activo",
+        "run": "10260",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 6 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 2,
+        "escala_max": 7,
+        "descripcion": "Bajo"
+      },
+      "datos_mensuales": {
+        "periodo": null,
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": null,
+          "1m": null,
+          "3m": null,
+          "6m": null,
+          "12m": null,
+          "2y": null
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": []
+      },
+      "rentabilidades_historicas": {
+        "2025": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        },
+        "2026": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Gestión activa en instrumentos de renta fija en UF, buscando capturar oportunidades de valor relativo dentro del universo de deuda reajustable."
+    },
+    {
+      "_id": "acciones-nacionales",
+      "_paleta": "indigo",
+      "_categoria": "FM_RV_CL",
+      "_categoria_display": "Renta Variable · Acciones Chile",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Acciones Nacionales",
+        "nombre_corto": "Acciones Nacionales",
+        "run": "8872",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": "IPSA",
+        "horizonte_minimo": "desde 36 meses",
+        "rescate": "T+2",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 6,
+        "escala_max": 7,
+        "descripcion": "Alto"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": -0.35,
+          "1m": -6.81,
+          "3m": -0.36,
+          "6m": 13.84,
+          "12m": 36.49,
+          "2y": 64.8
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": "N/A",
+          "volatilidad_pct": null,
+          "rating_promedio": "N/A",
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 209.647,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": 5.49,
+          "feb": -2.32,
+          "mar": 10.5,
+          "abr": -5.43,
+          "may": 12.77,
+          "jun": -6.83,
+          "jul": 3.91,
+          "ago": 3.99,
+          "sep": -5.2,
+          "oct": 1.76,
+          "nov": 0.55,
+          "dic": 0.88,
+          "anual": 17.71
+        },
+        "2023": {
+          "ene": 1.05,
+          "feb": 1.21,
+          "mar": -0.71,
+          "abr": 2.19,
+          "may": 2.63,
+          "jun": 6.12,
+          "jul": 9.6,
+          "ago": -5.07,
+          "sep": -3.72,
+          "oct": -6.85,
+          "nov": 6.34,
+          "dic": 6.24,
+          "anual": 21.02
+        },
+        "2024": {
+          "ene": -2.66,
+          "feb": 5.35,
+          "mar": 0.52,
+          "abr": -1.81,
+          "may": 1.08,
+          "jun": -2.3,
+          "jul": 1.91,
+          "ago": -0.64,
+          "sep": 0.04,
+          "oct": 1.6,
+          "nov": 1.19,
+          "dic": 2.37,
+          "anual": 7.64
+        },
+        "2025": {
+          "ene": 7.77,
+          "feb": 2.86,
+          "mar": 5.64,
+          "abr": 7.67,
+          "may": 2.26,
+          "jun": 0.96,
+          "jul": -2.62,
+          "ago": 7.57,
+          "sep": 2.6,
+          "oct": 5.21,
+          "nov": 6.14,
+          "dic": 2.77,
+          "anual": 60.39
+        },
+        "2026": {
+          "ene": 13.77,
+          "feb": -6,
+          "mar": -6.8,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": -0.35
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": true,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Inversión en acciones del mercado chileno (IPSA y otras). Orientado a crecimiento patrimonial de largo plazo con alta volatilidad esperada."
+    },
+    {
+      "_id": "estados-unidos",
+      "_paleta": "indigo",
+      "_categoria": "FM_RV_USA",
+      "_categoria_display": "Renta Variable · Acciones EE.UU.",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Estados Unidos",
+        "nombre_corto": "Estados Unidos",
+        "run": "8437",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": "S&P 500",
+        "horizonte_minimo": "desde 36 meses",
+        "rescate": "T+2",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 6,
+        "escala_max": 7,
+        "descripcion": "Alto"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": -6.04,
+          "1m": -5.68,
+          "3m": -6.05,
+          "6m": -5.06,
+          "12m": 13.84,
+          "2y": 11.97
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": "N/A",
+          "volatilidad_pct": null,
+          "rating_promedio": "N/A",
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 136.0781,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -5.46,
+          "feb": -2.62,
+          "mar": 4.66,
+          "abr": -7.41,
+          "may": 0.22,
+          "jun": -7.36,
+          "jul": 5.35,
+          "ago": -3.55,
+          "sep": -8.23,
+          "oct": 8.02,
+          "nov": 4.1,
+          "dic": -5.19,
+          "anual": -16.88
+        },
+        "2023": {
+          "ene": 4.26,
+          "feb": -3.38,
+          "mar": 2.49,
+          "abr": 1.14,
+          "may": 1.39,
+          "jun": 5.08,
+          "jul": 3.08,
+          "ago": -1.69,
+          "sep": -5.24,
+          "oct": -2.58,
+          "nov": 8.24,
+          "dic": 3.66,
+          "anual": 19.05
+        },
+        "2024": {
+          "ene": 1.17,
+          "feb": 3.24,
+          "mar": 1.96,
+          "abr": -4.15,
+          "may": 4.66,
+          "jun": 1.84,
+          "jul": 1.24,
+          "ago": 2.94,
+          "sep": 1.07,
+          "oct": 0.87,
+          "nov": 3.75,
+          "dic": -4.07,
+          "anual": 14.46
+        },
+        "2025": {
+          "ene": 2.63,
+          "feb": -2.71,
+          "mar": -6.33,
+          "abr": 0.08,
+          "may": 7.93,
+          "jun": 4.95,
+          "jul": 2.05,
+          "ago": 3.11,
+          "sep": 2.45,
+          "oct": 0.8,
+          "nov": -0.18,
+          "dic": 0.7,
+          "anual": 13.29
+        },
+        "2026": {
+          "ene": 0.49,
+          "feb": -0.86,
+          "mar": -5.67,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": -6.04
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Inversión en acciones del mercado estadounidense indexadas al S&P 500. Exposición a la economía más grande del mundo con diversificación global."
+    },
+    {
+      "_id": "latinoamericano",
+      "_paleta": "indigo",
+      "_categoria": "FM_RV_LATAM",
+      "_categoria_display": "Renta Variable · Acciones Latam",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Latinoamericano",
+        "nombre_corto": "Latinoamericano",
+        "run": "8705",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": "MSCI EM Latin America",
+        "horizonte_minimo": "desde 36 meses",
+        "rescate": "T+2",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 6,
+        "escala_max": 7,
+        "descripcion": "Alto"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 8.97,
+          "1m": -9.4,
+          "3m": 8.96,
+          "6m": 13.79,
+          "12m": 40.27,
+          "2y": 14.38
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": "N/A",
+          "volatilidad_pct": null,
+          "rating_promedio": "N/A",
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 123.5933,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": 7.09,
+          "feb": 3.43,
+          "mar": 11.28,
+          "abr": -11.39,
+          "may": 7.07,
+          "jun": -17.94,
+          "jul": 4.26,
+          "ago": 6.02,
+          "sep": -5.16,
+          "oct": 8.9,
+          "nov": -1.94,
+          "dic": -3.5,
+          "anual": 4.3
+        },
+        "2023": {
+          "ene": 7.76,
+          "feb": -6.09,
+          "mar": 0.4,
+          "abr": 0.37,
+          "may": 2.18,
+          "jun": 9.79,
+          "jul": 3.88,
+          "ago": -5.14,
+          "sep": -3.78,
+          "oct": -4.09,
+          "nov": 10.43,
+          "dic": 6.49,
+          "anual": 19.99
+        },
+        "2024": {
+          "ene": -3.09,
+          "feb": -0.64,
+          "mar": 2.59,
+          "abr": -3.35,
+          "may": -4.7,
+          "jun": -6.99,
+          "jul": 0.1,
+          "ago": 2.24,
+          "sep": 0.27,
+          "oct": -4.43,
+          "nov": -5.95,
+          "dic": -5.88,
+          "anual": -27.42
+        },
+        "2025": {
+          "ene": 7.58,
+          "feb": 0.01,
+          "mar": 3.15,
+          "abr": 6.46,
+          "may": 4.74,
+          "jun": 2.23,
+          "jul": -6.13,
+          "ago": 8.58,
+          "sep": 5.79,
+          "oct": 0.21,
+          "nov": 4.13,
+          "dic": -0.83,
+          "anual": 42.84
+        },
+        "2026": {
+          "ene": 18.18,
+          "feb": 1.78,
+          "mar": -9.39,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 8.97
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Inversión en acciones de empresas latinoamericanas (ex Chile). Diversificación regional con exposición a mercados emergentes de la región."
+    },
+    {
+      "_id": "asia",
+      "_paleta": "indigo",
+      "_categoria": "FM_RV_INTL",
+      "_categoria_display": "Renta Variable · Acciones Asia",
+      "_estado": "pendiente_datos",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Asia",
+        "nombre_corto": "Asia",
+        "run": "9023",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": "MSCI AC Asia Pacific",
+        "horizonte_minimo": "desde 36 meses",
+        "rescate": "T+2",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 6,
+        "escala_max": 7,
+        "descripcion": "Alto"
+      },
+      "datos_mensuales": {
+        "periodo": null,
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": null,
+          "1m": null,
+          "3m": null,
+          "6m": null,
+          "12m": null,
+          "2y": null
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": "N/A",
+          "volatilidad_pct": null,
+          "rating_promedio": "N/A",
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": []
+      },
+      "rentabilidades_historicas": {
+        "2024": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        },
+        "2025": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        },
+        "2026": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Inversión en acciones de empresas de la región Asia-Pacífico. Diversificación geográfica hacia economías emergentes y desarrolladas de Asia."
+    },
+    {
+      "_id": "europa",
+      "_paleta": "indigo",
+      "_categoria": "FM_RV_INTL",
+      "_categoria_display": "Renta Variable · Acciones Europa",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Europa",
+        "nombre_corto": "Europa",
+        "run": "9027",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": "MSCI Europe",
+        "horizonte_minimo": "desde 36 meses",
+        "rescate": "T+2",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 6,
+        "escala_max": 7,
+        "descripcion": "Alto"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": -9.88,
+          "1m": -12.8,
+          "3m": -9.89,
+          "6m": -7.76,
+          "12m": 2.04,
+          "2y": -4.91
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": "N/A",
+          "volatilidad_pct": null,
+          "rating_promedio": "N/A",
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 99.0868,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -9.6,
+          "feb": -5.58,
+          "mar": 1.22,
+          "abr": -7.6,
+          "may": 0.07,
+          "jun": -9.85,
+          "jul": 6.7,
+          "ago": -7.7,
+          "sep": -10.75,
+          "oct": 9.31,
+          "nov": 9.96,
+          "dic": -2.76,
+          "anual": -26.68
+        },
+        "2023": {
+          "ene": 7.65,
+          "feb": -0.37,
+          "mar": 3.83,
+          "abr": 1.59,
+          "may": -0.92,
+          "jun": 2.61,
+          "jul": 2.01,
+          "ago": -3.7,
+          "sep": -6.27,
+          "oct": -3.21,
+          "nov": 11.21,
+          "dic": 5.98,
+          "anual": 20.61
+        },
+        "2024": {
+          "ene": 1.46,
+          "feb": 3.11,
+          "mar": 2.15,
+          "abr": -5.19,
+          "may": 1.48,
+          "jun": -1.83,
+          "jul": -0.32,
+          "ago": 3.42,
+          "sep": 0.64,
+          "oct": -2.41,
+          "nov": -2.78,
+          "dic": -1.06,
+          "anual": -2.96
+        },
+        "2025": {
+          "ene": 6.21,
+          "feb": 0.37,
+          "mar": -3.31,
+          "abr": 3.77,
+          "may": 7.51,
+          "jun": 1.68,
+          "jul": -5.04,
+          "ago": 2.54,
+          "sep": 3.29,
+          "oct": 0.98,
+          "nov": -1.65,
+          "dic": 2.31,
+          "anual": 16.67
+        },
+        "2026": {
+          "ene": 1.64,
+          "feb": 1.69,
+          "mar": -12.78,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": -9.88
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Inversión en acciones de empresas europeas. Diversificación hacia mercados desarrollados con exposición a EUR y economías de la zona euro."
+    },
+    {
+      "_id": "cuenta-activa-defensiva-dolar",
+      "_paleta": "azul",
+      "_categoria": "FM_CAD",
+      "_categoria_display": "Cuenta Activa · Defensiva Dólar",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Cuenta Activa Defensiva Dólar",
+        "nombre_corto": "CA Defensiva Dólar",
+        "run": "8172",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "USD",
+        "benchmark": null,
+        "horizonte_minimo": "desde 6 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 2,
+        "escala_max": 7,
+        "descripcion": "Bajo"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": -0.77,
+          "1m": -2.08,
+          "3m": -0.78,
+          "6m": 0.16,
+          "12m": 4.43,
+          "2y": 8.18
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 103.8149,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -1.38,
+          "feb": -1.53,
+          "mar": -0.95,
+          "abr": -2.4,
+          "may": -0.65,
+          "jun": -3.42,
+          "jul": 1.8,
+          "ago": -1.27,
+          "sep": -3.63,
+          "oct": 0.23,
+          "nov": 3,
+          "dic": -0.63,
+          "anual": -10.4
+        },
+        "2023": {
+          "ene": 2.6,
+          "feb": -2.13,
+          "mar": 1.24,
+          "abr": 0.66,
+          "may": -0.89,
+          "jun": 0.62,
+          "jul": 0.78,
+          "ago": -0.61,
+          "sep": -2.23,
+          "oct": -1.34,
+          "nov": 4.36,
+          "dic": 3.2,
+          "anual": 6.4
+        },
+        "2024": {
+          "ene": -0.47,
+          "feb": -0.69,
+          "mar": 0.83,
+          "abr": -1.51,
+          "may": 0.93,
+          "jun": 0.43,
+          "jul": 1.48,
+          "ago": 0.99,
+          "sep": 1.32,
+          "oct": -1.57,
+          "nov": 0.6,
+          "dic": -0.77,
+          "anual": 1.93
+        },
+        "2025": {
+          "ene": 0.82,
+          "feb": 1.26,
+          "mar": -0.23,
+          "abr": -0.1,
+          "may": 0.48,
+          "jun": 1.64,
+          "jul": 0.26,
+          "ago": 0.91,
+          "sep": 0.73,
+          "oct": 0.44,
+          "nov": 0.33,
+          "dic": 0.33,
+          "anual": 7.18
+        },
+        "2026": {
+          "ene": 0.65,
+          "feb": 0.69,
+          "mar": -2.07,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": -0.77
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Gestión discrecional conservadora en USD. Exposición a renta fija de corto plazo en dólares con baja volatilidad."
+    },
+    {
+      "_id": "cuenta-activa-conservadora",
+      "_paleta": "azul",
+      "_categoria": "FM_CAD",
+      "_categoria_display": "Cuenta Activa · Conservadora",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Cuenta Activa Conservadora",
+        "nombre_corto": "CA Conservadora",
+        "run": "9192",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 6 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 2,
+        "escala_max": 7,
+        "descripcion": "Bajo"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 1.18,
+          "1m": -0.12,
+          "3m": 1.19,
+          "6m": 1.91,
+          "12m": 8.29,
+          "2y": 15.37
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 128.2865,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -2.41,
+          "feb": -0.15,
+          "mar": 0.14,
+          "abr": 0.92,
+          "may": 0.56,
+          "jun": 1.2,
+          "jul": 0.07,
+          "ago": -0.78,
+          "sep": -1.51,
+          "oct": -0.15,
+          "nov": 2.33,
+          "dic": -0.7,
+          "anual": 0.38
+        },
+        "2023": {
+          "ene": 0.29,
+          "feb": 0.16,
+          "mar": 1.25,
+          "abr": 0.15,
+          "may": -0.7,
+          "jun": 1.48,
+          "jul": 1.79,
+          "ago": -0.64,
+          "sep": -1.25,
+          "oct": -1.28,
+          "nov": 3.37,
+          "dic": 2.65,
+          "anual": 6.69
+        },
+        "2024": {
+          "ene": 0.68,
+          "feb": 0.77,
+          "mar": 0.98,
+          "abr": -0.99,
+          "may": -0.12,
+          "jun": 1.06,
+          "jul": 1.44,
+          "ago": 0.75,
+          "sep": 1.18,
+          "oct": 0.17,
+          "nov": 1.42,
+          "dic": -0.05,
+          "anual": 8.2
+        },
+        "2025": {
+          "ene": 1.2,
+          "feb": 0.14,
+          "mar": 0.15,
+          "abr": 1.17,
+          "may": 0.47,
+          "jun": 0.69,
+          "jul": 1.68,
+          "ago": 1.39,
+          "sep": 1.11,
+          "oct": 0.4,
+          "nov": 0.3,
+          "dic": 0.04,
+          "anual": 8.63
+        },
+        "2026": {
+          "ene": 0.9,
+          "feb": 0.41,
+          "mar": -0.13,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 1.18
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Gestión discrecional conservadora en CLP. Exposición mayoritaria a renta fija de corto y mediano plazo con componente mínimo de renta variable."
+    },
+    {
+      "_id": "cuenta-activa-moderada",
+      "_paleta": "teal",
+      "_categoria": "FM_CAD",
+      "_categoria_display": "Cuenta Activa · Moderada",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Cuenta Activa Moderada",
+        "nombre_corto": "CA Moderada",
+        "run": "9190",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 24 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 4,
+        "escala_max": 7,
+        "descripcion": "Medio"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 0.97,
+          "1m": -0.82,
+          "3m": 0.97,
+          "6m": 1.6,
+          "12m": 12.93,
+          "2y": 18.04
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 136.1399,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -4.36,
+          "feb": -1.27,
+          "mar": -0.23,
+          "abr": 1.31,
+          "may": 0.19,
+          "jun": 2.25,
+          "jul": -0.3,
+          "ago": -0.54,
+          "sep": -1.56,
+          "oct": -0.4,
+          "nov": 2.65,
+          "dic": -1.29,
+          "anual": -3.76
+        },
+        "2023": {
+          "ene": 0.9,
+          "feb": -0.24,
+          "mar": 0.49,
+          "abr": 0.24,
+          "may": -0.41,
+          "jun": 2.06,
+          "jul": 3.37,
+          "ago": -1.26,
+          "sep": -1.19,
+          "oct": -1.89,
+          "nov": 3.41,
+          "dic": 3.3,
+          "anual": 8.04
+        },
+        "2024": {
+          "ene": 1.62,
+          "feb": 2.12,
+          "mar": 1.65,
+          "abr": -2.35,
+          "may": -0.4,
+          "jun": 1.65,
+          "jul": 1.37,
+          "ago": 0.26,
+          "sep": 0.86,
+          "oct": 1.48,
+          "nov": 1.62,
+          "dic": -0.35,
+          "anual": 10.2
+        },
+        "2025": {
+          "ene": 1.69,
+          "feb": -0.4,
+          "mar": -0.43,
+          "abr": 1.67,
+          "may": 1.67,
+          "jun": 1.39,
+          "jul": 2.68,
+          "ago": 2.59,
+          "sep": 1.92,
+          "oct": 0.73,
+          "nov": 0.03,
+          "dic": 0.14,
+          "anual": 12.79
+        },
+        "2026": {
+          "ene": 1.19,
+          "feb": 0.62,
+          "mar": -0.82,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 0.97
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Gestión discrecional moderada. Balance entre renta fija y renta variable según visión táctica del equipo de inversiones."
+    },
+    {
+      "_id": "cuenta-activa-agresiva",
+      "_paleta": "indigo",
+      "_categoria": "FM_CAD",
+      "_categoria_display": "Cuenta Activa · Agresiva",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Cuenta Activa Agresiva",
+        "nombre_corto": "CA Agresiva",
+        "run": "9193",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 36 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 6,
+        "escala_max": 7,
+        "descripcion": "Alto"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 0.58,
+          "1m": -2,
+          "3m": 0.57,
+          "6m": 0.66,
+          "12m": 17.15,
+          "2y": 18.96
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": "N/A",
+          "volatilidad_pct": null,
+          "rating_promedio": "N/A",
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 150.1419,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -7.5,
+          "feb": -2.45,
+          "mar": -0.18,
+          "abr": 0.54,
+          "may": -0.28,
+          "jun": 3.42,
+          "jul": -0.22,
+          "ago": -0.35,
+          "sep": -1.76,
+          "oct": 0.04,
+          "nov": 2.57,
+          "dic": -4.04,
+          "anual": -11.66
+        },
+        "2023": {
+          "ene": 1.41,
+          "feb": -0.34,
+          "mar": -0.39,
+          "abr": 1.24,
+          "may": 0.13,
+          "jun": 3.45,
+          "jul": 7.16,
+          "ago": -2.26,
+          "sep": -0.44,
+          "oct": -2.62,
+          "nov": 4.06,
+          "dic": 4.84,
+          "anual": 14.81
+        },
+        "2024": {
+          "ene": 3.15,
+          "feb": 4.62,
+          "mar": 2.53,
+          "abr": -4.24,
+          "may": -0.99,
+          "jun": 2.79,
+          "jul": 0.91,
+          "ago": -0.27,
+          "sep": 0.39,
+          "oct": 3.95,
+          "nov": 1.81,
+          "dic": -0.64,
+          "anual": 14.43
+        },
+        "2025": {
+          "ene": 2,
+          "feb": -1.49,
+          "mar": -1.18,
+          "abr": 1.87,
+          "may": 3.07,
+          "jun": 2.25,
+          "jul": 4.08,
+          "ago": 3.94,
+          "sep": 2.54,
+          "oct": 0.9,
+          "nov": -0.32,
+          "dic": -0.01,
+          "anual": 15.64
+        },
+        "2026": {
+          "ene": 1.87,
+          "feb": 0.75,
+          "mar": -1.99,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 0.58
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Gestión discrecional agresiva con exposición mayoritaria a renta variable global. Máximo potencial de retorno con alta volatilidad esperada."
+    },
+    {
+      "_id": "cuenta-activa-conservadora-dolar",
+      "_paleta": "azul",
+      "_categoria": "FM_CAD",
+      "_categoria_display": "Cuenta Activa · Conservadora Dólar",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Cuenta Activa Conservadora Dólar",
+        "nombre_corto": "CA Conservadora Dólar",
+        "run": "9853",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "USD",
+        "benchmark": null,
+        "horizonte_minimo": "desde 6 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 2,
+        "escala_max": 7,
+        "descripcion": "Bajo"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": -1.02,
+          "1m": -3.03,
+          "3m": -1.03,
+          "6m": -0.08,
+          "12m": 6.95,
+          "2y": 10.99
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 110.9694,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -2.25,
+          "feb": -1.66,
+          "mar": -0.3,
+          "abr": -3.01,
+          "may": -0.6,
+          "jun": -4,
+          "jul": 2.27,
+          "ago": -1.71,
+          "sep": -4.48,
+          "oct": 1.63,
+          "nov": 3.34,
+          "dic": -1.42,
+          "anual": -11.49
+        },
+        "2023": {
+          "ene": 3.31,
+          "feb": -2.67,
+          "mar": 1.75,
+          "abr": 0.66,
+          "may": -0.83,
+          "jun": 1.16,
+          "jul": 1.26,
+          "ago": -1.02,
+          "sep": -2.76,
+          "oct": -1.49,
+          "nov": 5,
+          "dic": 3.39,
+          "anual": 8.27
+        },
+        "2024": {
+          "ene": -0.4,
+          "feb": 0.17,
+          "mar": 1.06,
+          "abr": -1.73,
+          "may": 1.41,
+          "jun": 1.07,
+          "jul": 1.15,
+          "ago": 1.56,
+          "sep": 1.56,
+          "oct": -1.2,
+          "nov": 0.96,
+          "dic": -1.17,
+          "anual": 4.87
+        },
+        "2025": {
+          "ene": 1.08,
+          "feb": 0.83,
+          "mar": -1.32,
+          "abr": -0.39,
+          "may": 1.65,
+          "jun": 2.18,
+          "jul": 0.68,
+          "ago": 1.43,
+          "sep": 1.48,
+          "oct": 0.74,
+          "nov": -0.12,
+          "dic": 0.44,
+          "anual": 8.67
+        },
+        "2026": {
+          "ene": 1.37,
+          "feb": 0.7,
+          "mar": -3.02,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": -1.02
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Gestión discrecional conservadora denominada en USD. Renta fija de corto plazo en dólares para perfil conservador con exposición cambiaria."
+    },
+    {
+      "_id": "cuenta-activa-moderada-dolar",
+      "_paleta": "azul",
+      "_categoria": "FM_CAD",
+      "_categoria_display": "Cuenta Activa · Moderada Dólar",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Cuenta Activa Moderada Dólar",
+        "nombre_corto": "CA Moderada Dólar",
+        "run": "9816",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "USD",
+        "benchmark": null,
+        "horizonte_minimo": "desde 24 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 4,
+        "escala_max": 7,
+        "descripcion": "Medio"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": -0.25,
+          "1m": -4.55,
+          "3m": -0.26,
+          "6m": 1.35,
+          "12m": 11.58,
+          "2y": 14.62
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 111.9519,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -3.43,
+          "feb": -2.49,
+          "mar": 0.27,
+          "abr": -4.23,
+          "may": 0.11,
+          "jun": -5.16,
+          "jul": 1.8,
+          "ago": -0.93,
+          "sep": -5.05,
+          "oct": 1.87,
+          "nov": 4.05,
+          "dic": -1.25,
+          "anual": -13.78
+        },
+        "2023": {
+          "ene": 4.33,
+          "feb": -3.27,
+          "mar": 1.22,
+          "abr": 0.52,
+          "may": -0.98,
+          "jun": 2.08,
+          "jul": 2.06,
+          "ago": -1.68,
+          "sep": -2.66,
+          "oct": -1.81,
+          "nov": 5.27,
+          "dic": 3.41,
+          "anual": 9.02
+        },
+        "2024": {
+          "ene": -0.43,
+          "feb": 0.89,
+          "mar": 1.36,
+          "abr": -1.72,
+          "may": 1.41,
+          "jun": 0.63,
+          "jul": 0.97,
+          "ago": 1.91,
+          "sep": 1.92,
+          "oct": -1.52,
+          "nov": 0.22,
+          "dic": -1.57,
+          "anual": 4.23
+        },
+        "2025": {
+          "ene": 1.66,
+          "feb": 0.85,
+          "mar": -1.37,
+          "abr": -0.4,
+          "may": 2.59,
+          "jun": 2.8,
+          "jul": 0.64,
+          "ago": 2.28,
+          "sep": 2.24,
+          "oct": 1.05,
+          "nov": -0.11,
+          "dic": 0.71,
+          "anual": 13.1
+        },
+        "2026": {
+          "ene": 3.15,
+          "feb": 1.31,
+          "mar": -4.54,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": -0.25
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Gestión discrecional moderada en USD. Balance renta fija/variable en dólares con visión táctica del equipo de inversiones."
+    },
+    {
+      "_id": "cuenta-activa-agresiva-dolar",
+      "_paleta": "indigo",
+      "_categoria": "FM_CAD",
+      "_categoria_display": "Cuenta Activa · Agresiva Dólar",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo LarrainVial Cuenta Activa Agresiva Dólar",
+        "nombre_corto": "CA Agresiva Dólar",
+        "run": "10002",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "USD",
+        "benchmark": null,
+        "horizonte_minimo": "desde 36 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 6,
+        "escala_max": 7,
+        "descripcion": "Alto"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 1,
+          "1m": -6.28,
+          "3m": 0.99,
+          "6m": 3.5,
+          "12m": 19.69,
+          "2y": 20.17
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": "N/A",
+          "volatilidad_pct": null,
+          "rating_promedio": "N/A",
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 117.4564,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -4.47,
+          "feb": -2.2,
+          "mar": 1.67,
+          "abr": -6.42,
+          "may": 1.49,
+          "jun": -7.58,
+          "jul": 2.98,
+          "ago": -0.98,
+          "sep": -6.68,
+          "oct": 4.37,
+          "nov": 5.04,
+          "dic": -2.66,
+          "anual": -15.03
+        },
+        "2023": {
+          "ene": 6.26,
+          "feb": -4.23,
+          "mar": 1.96,
+          "abr": 0.53,
+          "may": -0.94,
+          "jun": 4,
+          "jul": 2.98,
+          "ago": -2.85,
+          "sep": -3.55,
+          "oct": -2.54,
+          "nov": 6.68,
+          "dic": 3.8,
+          "anual": 12.88
+        },
+        "2024": {
+          "ene": -0.99,
+          "feb": 1.65,
+          "mar": 1.83,
+          "abr": -2.41,
+          "may": 1.58,
+          "jun": 0.37,
+          "jul": 0.59,
+          "ago": 2.71,
+          "sep": 2.31,
+          "oct": -1.73,
+          "nov": -0.31,
+          "dic": -2.64,
+          "anual": 2.53
+        },
+        "2025": {
+          "ene": 2.3,
+          "feb": 0.31,
+          "mar": -1.21,
+          "abr": 0.05,
+          "may": 4.42,
+          "jun": 4,
+          "jul": 0.21,
+          "ago": 3.74,
+          "sep": 3.65,
+          "oct": 1.62,
+          "nov": -0.01,
+          "dic": 1.06,
+          "anual": 20.14
+        },
+        "2026": {
+          "ene": 5.34,
+          "feb": 2.3,
+          "mar": -6.27,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 1
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Gestión discrecional agresiva en USD con alta exposición a renta variable global denominada en dólares."
+    },
+    {
+      "_id": "consorcio-dinamico-conservador",
+      "_paleta": "verde",
+      "_categoria": "FM_CON",
+      "_categoria_display": "Consorcio · Dinámico Conservador",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo Consorcio Dinámico Conservador",
+        "nombre_corto": "Dinámico Conservador",
+        "run": "9430",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 12 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 2,
+        "escala_max": 7,
+        "descripcion": "Bajo"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 1.82,
+          "1m": 0.89,
+          "3m": 1.83,
+          "6m": 2.47,
+          "12m": 6.39,
+          "2y": 13.92
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 120.3098,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -1.61,
+          "feb": 0.58,
+          "mar": 0.38,
+          "abr": 1.4,
+          "may": 0.59,
+          "jun": 0.46,
+          "jul": -0.56,
+          "ago": -1.11,
+          "sep": -1.97,
+          "oct": -0.02,
+          "nov": 2.42,
+          "dic": 0.13,
+          "anual": 1.68
+        },
+        "2023": {
+          "ene": 0.44,
+          "feb": 0.6,
+          "mar": 0.61,
+          "abr": -0.1,
+          "may": -0.5,
+          "jun": 1.16,
+          "jul": 1.18,
+          "ago": -0.07,
+          "sep": -0.94,
+          "oct": -1.11,
+          "nov": 2.5,
+          "dic": 2.33,
+          "anual": 5.53
+        },
+        "2024": {
+          "ene": 0.78,
+          "feb": 0.35,
+          "mar": 1.07,
+          "abr": -0.66,
+          "may": 0.42,
+          "jun": 0.47,
+          "jul": 1.49,
+          "ago": 1,
+          "sep": 1.63,
+          "oct": -0.99,
+          "nov": 1.24,
+          "dic": -0.23,
+          "anual": 7.72
+        },
+        "2025": {
+          "ene": 0.81,
+          "feb": 0.72,
+          "mar": 0.64,
+          "abr": 1.04,
+          "may": -0.22,
+          "jun": 0.46,
+          "jul": 0.98,
+          "ago": 0.8,
+          "sep": 0.61,
+          "oct": 0.13,
+          "nov": 0.37,
+          "dic": 0.13,
+          "anual": 6.79
+        },
+        "2026": {
+          "ene": 0.6,
+          "feb": 0.33,
+          "mar": 0.87,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 1.82
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        },
+        {
+          "serie": "APV",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": true
+        }
+      ],
+      "objetivo": "Portafolio dinámico conservador distribuido principalmente en renta fija con exposición accionaria reducida. Orientado a APV Consorcio."
+    },
+    {
+      "_id": "consorcio-dinamico-moderado",
+      "_paleta": "teal",
+      "_categoria": "FM_CON",
+      "_categoria_display": "Consorcio · Dinámico Moderado",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo Consorcio Dinámico Moderado",
+        "nombre_corto": "Dinámico Moderado",
+        "run": "9432",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 24 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 3,
+        "escala_max": 7,
+        "descripcion": "Bajo-Medio"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 1.15,
+          "1m": -0.14,
+          "3m": 1.15,
+          "6m": 1.71,
+          "12m": 7.62,
+          "2y": 13.52
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 122.1074,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -2.55,
+          "feb": -0.12,
+          "mar": 0.04,
+          "abr": 1.2,
+          "may": 0.43,
+          "jun": 1.01,
+          "jul": -0.71,
+          "ago": -0.95,
+          "sep": -1.9,
+          "oct": -0.17,
+          "nov": 2.52,
+          "dic": -0.71,
+          "anual": -1.12
+        },
+        "2023": {
+          "ene": 0.12,
+          "feb": -0.16,
+          "mar": 1.12,
+          "abr": 0.12,
+          "may": -0.86,
+          "jun": 1.41,
+          "jul": 1.64,
+          "ago": -0.79,
+          "sep": -1.56,
+          "oct": -1.46,
+          "nov": 3.62,
+          "dic": 2.69,
+          "anual": 5.35
+        },
+        "2024": {
+          "ene": 0.59,
+          "feb": 0.54,
+          "mar": 1.2,
+          "abr": -1.29,
+          "may": -0.22,
+          "jun": 0.94,
+          "jul": 1.52,
+          "ago": 0.74,
+          "sep": 1.26,
+          "oct": -0.1,
+          "nov": 1.39,
+          "dic": -0.28,
+          "anual": 7.13
+        },
+        "2025": {
+          "ene": 1.1,
+          "feb": 0.17,
+          "mar": 0.16,
+          "abr": 1.17,
+          "may": 0.41,
+          "jun": 0.71,
+          "jul": 1.73,
+          "ago": 1.24,
+          "sep": 0.89,
+          "oct": 0.4,
+          "nov": 0.18,
+          "dic": 0.02,
+          "anual": 7.94
+        },
+        "2026": {
+          "ene": 0.88,
+          "feb": 0.42,
+          "mar": -0.15,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 1.15
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        },
+        {
+          "serie": "APV",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": true
+        }
+      ],
+      "objetivo": "Balance dinámico entre renta fija y variable. Moderación de riesgo con potencial de crecimiento real. Orientado a APV Consorcio."
+    },
+    {
+      "_id": "consorcio-dinamico-balanceado",
+      "_paleta": "teal",
+      "_categoria": "FM_CON",
+      "_categoria_display": "Consorcio · Dinámico Balanceado",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo Consorcio Dinámico Balanceado",
+        "nombre_corto": "Dinámico Balanceado",
+        "run": "9429",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 36 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 4,
+        "escala_max": 7,
+        "descripcion": "Medio"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 0.66,
+          "1m": -1.07,
+          "3m": 0.65,
+          "6m": 0.66,
+          "12m": 8.76,
+          "2y": 11.8
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 124.5277,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -4.45,
+          "feb": -1.3,
+          "mar": -0.27,
+          "abr": 1.23,
+          "may": 0.06,
+          "jun": 2.26,
+          "jul": -0.5,
+          "ago": -0.66,
+          "sep": -1.68,
+          "oct": -0.46,
+          "nov": 2.57,
+          "dic": -1.48,
+          "anual": -4.83
+        },
+        "2023": {
+          "ene": 0.87,
+          "feb": -0.33,
+          "mar": 0.29,
+          "abr": 0.2,
+          "may": -0.68,
+          "jun": 1.97,
+          "jul": 3.39,
+          "ago": -1.42,
+          "sep": -1.24,
+          "oct": -2.1,
+          "nov": 3.48,
+          "dic": 3.39,
+          "anual": 6.98
+        },
+        "2024": {
+          "ene": 1.36,
+          "feb": 1.72,
+          "mar": 1.5,
+          "abr": -2.51,
+          "may": -0.5,
+          "jun": 1.51,
+          "jul": 1.36,
+          "ago": 0.25,
+          "sep": 0.78,
+          "oct": 1.06,
+          "nov": 1.41,
+          "dic": -0.61,
+          "anual": 7.79
+        },
+        "2025": {
+          "ene": 1.47,
+          "feb": -0.39,
+          "mar": -0.49,
+          "abr": 0.96,
+          "may": 1.2,
+          "jun": 1.16,
+          "jul": 2.19,
+          "ago": 1.96,
+          "sep": 1.43,
+          "oct": 0.43,
+          "nov": -0.22,
+          "dic": -0.05,
+          "anual": 8.69
+        },
+        "2026": {
+          "ene": 1.23,
+          "feb": 0.52,
+          "mar": -1.07,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 0.66
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        },
+        {
+          "serie": "APV",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": true
+        }
+      ],
+      "objetivo": "50/50 entre renta fija y variable. Exposición equilibrada para horizonte de mediano-largo plazo en APV Consorcio."
+    },
+    {
+      "_id": "consorcio-dinamico-crecimiento",
+      "_paleta": "indigo",
+      "_categoria": "FM_CON",
+      "_categoria_display": "Consorcio · Dinámico Crecimiento",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo Consorcio Dinámico Crecimiento",
+        "nombre_corto": "Dinámico Crecimiento",
+        "run": "9431",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 36 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 5,
+        "escala_max": 7,
+        "descripcion": "Medio-Alto"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 0.3,
+          "1m": -1.91,
+          "3m": 0.29,
+          "6m": -0.41,
+          "12m": 10.77,
+          "2y": 12.63
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 131.043,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -5.89,
+          "feb": -1.9,
+          "mar": -0.23,
+          "abr": 0.83,
+          "may": -0.18,
+          "jun": 3.01,
+          "jul": -0.24,
+          "ago": -0.62,
+          "sep": -1.73,
+          "oct": -0.3,
+          "nov": 2.39,
+          "dic": -2.89,
+          "anual": -8.83
+        },
+        "2023": {
+          "ene": 1.05,
+          "feb": -0.3,
+          "mar": -0.16,
+          "abr": 0.68,
+          "may": -0.2,
+          "jun": 2.46,
+          "jul": 5.07,
+          "ago": -1.95,
+          "sep": -0.87,
+          "oct": -2.34,
+          "nov": 3.59,
+          "dic": 4.13,
+          "anual": 9.89
+        },
+        "2024": {
+          "ene": 2.16,
+          "feb": 2.99,
+          "mar": 1.84,
+          "abr": -3.28,
+          "may": -0.84,
+          "jun": 2.09,
+          "jul": 0.9,
+          "ago": -0.15,
+          "sep": 0.76,
+          "oct": 2.38,
+          "nov": 1.2,
+          "dic": -0.42,
+          "anual": 10.11
+        },
+        "2025": {
+          "ene": 1.49,
+          "feb": -0.84,
+          "mar": -0.74,
+          "abr": 1.06,
+          "may": 2.05,
+          "jun": 1.79,
+          "jul": 3.07,
+          "ago": 2.58,
+          "sep": 2.02,
+          "oct": 0.54,
+          "nov": -0.74,
+          "dic": -0.28,
+          "anual": 10.31
+        },
+        "2026": {
+          "ene": 1.5,
+          "feb": 0.75,
+          "mar": -1.9,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 0.3
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        },
+        {
+          "serie": "APV",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": true
+        }
+      ],
+      "objetivo": "Alta exposición a renta variable global para maximizar crecimiento patrimonial en APV Consorcio. Horizonte mínimo de 5 años recomendado."
+    },
+    {
+      "_id": "consorcio-dinamico-agresivo",
+      "_paleta": "indigo",
+      "_categoria": "FM_CON",
+      "_categoria_display": "Consorcio · Dinámico Agresivo",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo Consorcio Dinámico Agresivo",
+        "nombre_corto": "Dinámico Agresivo",
+        "run": "9428",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 48 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 6,
+        "escala_max": 7,
+        "descripcion": "Alto"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": -0.32,
+          "1m": -2.58,
+          "3m": -0.33,
+          "6m": -1.79,
+          "12m": 12.63,
+          "2y": 13.01
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": "N/A",
+          "volatilidad_pct": null,
+          "rating_promedio": "N/A",
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 135.6089,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -7.58,
+          "feb": -2.49,
+          "mar": -0.17,
+          "abr": 0.49,
+          "may": -0.48,
+          "jun": 3.39,
+          "jul": -0.31,
+          "ago": -0.54,
+          "sep": -1.84,
+          "oct": -0.11,
+          "nov": 2.46,
+          "dic": -4.14,
+          "anual": -12.73
+        },
+        "2023": {
+          "ene": 1.28,
+          "feb": -0.42,
+          "mar": -0.63,
+          "abr": 1.14,
+          "may": -0.05,
+          "jun": 3.35,
+          "jul": 7.19,
+          "ago": -2.47,
+          "sep": -0.48,
+          "oct": -2.83,
+          "nov": 3.86,
+          "dic": 4.83,
+          "anual": 13.09
+        },
+        "2024": {
+          "ene": 2.94,
+          "feb": 4.02,
+          "mar": 2.29,
+          "abr": -4.2,
+          "may": -1.13,
+          "jun": 2.66,
+          "jul": 0.79,
+          "ago": -0.39,
+          "sep": 0.33,
+          "oct": 3.59,
+          "nov": 1.5,
+          "dic": -0.58,
+          "anual": 12.01
+        },
+        "2025": {
+          "ene": 1.72,
+          "feb": -1.44,
+          "mar": -1.04,
+          "abr": 1.5,
+          "may": 2.99,
+          "jun": 2.27,
+          "jul": 3.84,
+          "ago": 3.36,
+          "sep": 2.49,
+          "oct": 0.54,
+          "nov": -1.1,
+          "dic": -0.51,
+          "anual": 12.07
+        },
+        "2026": {
+          "ene": 1.46,
+          "feb": 0.87,
+          "mar": -2.57,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": -0.32
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        },
+        {
+          "serie": "APV",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": true
+        }
+      ],
+      "objetivo": "Máxima exposición a renta variable global. Portafolio de alta convicción para perfiles agresivos con horizonte previsional largo en APV Consorcio."
+    },
+    {
+      "_id": "consorcio-ahorro-dinamico",
+      "_paleta": "verde",
+      "_categoria": "FM_CON",
+      "_categoria_display": "Consorcio · Ahorro Dinámico",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo Mutuo Consorcio Ahorro Dinámico",
+        "nombre_corto": "Ahorro Dinámico",
+        "run": "8375",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo Mutuo",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "desde 12 meses",
+        "rescate": "T+1",
+        "monto_minimo": "Sin mínimo",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 3,
+        "escala_max": 7,
+        "descripcion": "Bajo-Medio"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 2.02,
+          "1m": 0.96,
+          "3m": 2.03,
+          "6m": 2.93,
+          "12m": 6.09,
+          "2y": 14.76
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 127.7286,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -0.01,
+          "feb": 1.35,
+          "mar": 0.9,
+          "abr": 2.32,
+          "may": 0.76,
+          "jun": 1.11,
+          "jul": 1.34,
+          "ago": -1.34,
+          "sep": -1.78,
+          "oct": 0.76,
+          "nov": 2.9,
+          "dic": 0.63,
+          "anual": 11.27
+        },
+        "2023": {
+          "ene": 0.21,
+          "feb": 0.3,
+          "mar": 1.16,
+          "abr": -0.56,
+          "may": -0.85,
+          "jun": 1.19,
+          "jul": 0.23,
+          "ago": 0.06,
+          "sep": -1.62,
+          "oct": -1.03,
+          "nov": 3.25,
+          "dic": 1.97,
+          "anual": 4.35
+        },
+        "2024": {
+          "ene": 0.12,
+          "feb": -0.39,
+          "mar": 1,
+          "abr": -0.31,
+          "may": 0.89,
+          "jun": 0.38,
+          "jul": 1.73,
+          "ago": 1.53,
+          "sep": 2.08,
+          "oct": -1.83,
+          "nov": 1.27,
+          "dic": -0.51,
+          "anual": 7.22
+        },
+        "2025": {
+          "ene": 0.69,
+          "feb": 0.94,
+          "mar": 0.61,
+          "abr": 0.9,
+          "may": -0.23,
+          "jun": 0.37,
+          "jul": 0.7,
+          "ago": 0.5,
+          "sep": 0.51,
+          "oct": 0.11,
+          "nov": 0.42,
+          "dic": 0.34,
+          "anual": 6.37
+        },
+        "2026": {
+          "ene": 0.54,
+          "feb": 0.51,
+          "mar": 0.95,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 2.02
+        }
+      },
+      "tributario": {
+        "apv": true,
+        "apvc": true,
+        "art57": true,
+        "art107": false,
+        "art108": true
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Fondo de ahorro dinámico Consorcio con exposición diversificada y gestión activa. Orientado a CUI y productos de ahorro Consorcio Seguros."
+    },
+    {
+      "_id": "fi-small-cap-latam",
+      "_paleta": "ambar",
+      "_categoria": "FI_RV",
+      "_categoria_display": "Fondo de Inversión · Small Cap Latam",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo de Inversión LarrainVial Small Cap Latam",
+        "nombre_corto": "Small Cap Latam",
+        "run": "7127",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo de Inversión",
+        "moneda": "USD",
+        "benchmark": "MSCI EM Latin America Small Cap",
+        "horizonte_minimo": "largo plazo",
+        "rescate": "según reglamento",
+        "monto_minimo": "Inversionistas calificados",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 7,
+        "escala_max": 7,
+        "descripcion": "Muy Alto"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 10.58,
+          "1m": -7.52,
+          "3m": 10.58,
+          "6m": 17.18,
+          "12m": 54.67,
+          "2y": 40.79
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": "N/A",
+          "volatilidad_pct": null,
+          "rating_promedio": "N/A",
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 140.7925,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2024": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": -6.82,
+          "may": -1.66,
+          "jun": -7.87,
+          "jul": 1.35,
+          "ago": 3.91,
+          "sep": 2.34,
+          "oct": -1.42,
+          "nov": -3.94,
+          "dic": -6.31,
+          "anual": -21.39
+        },
+        "2025": {
+          "ene": 10.26,
+          "feb": 0.33,
+          "mar": 4.69,
+          "abr": 6.51,
+          "may": 7.04,
+          "jun": 7.23,
+          "jul": -9.89,
+          "ago": 9.34,
+          "sep": 6.49,
+          "oct": 0.79,
+          "nov": 7.23,
+          "dic": -0.8,
+          "anual": 61.98
+        },
+        "2026": {
+          "ene": 15.34,
+          "feb": 3.67,
+          "mar": -7.51,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 10.58
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": false,
+        "art107": false,
+        "art108": false
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Inversión en acciones de empresas de pequeña capitalización en América Latina. Acceso a segmento de alto potencial con liquidez reducida."
+    },
+    {
+      "_id": "fi-deuda-chile",
+      "_paleta": "ambar",
+      "_categoria": "FI_RF",
+      "_categoria_display": "Fondo de Inversión · Deuda Chile",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo de Inversión LarrainVial Deuda Chile",
+        "nombre_corto": "Deuda Chile",
+        "run": "7210",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo de Inversión",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "largo plazo",
+        "rescate": "según reglamento",
+        "monto_minimo": "Inversionistas calificados",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 4,
+        "escala_max": 7,
+        "descripcion": "Medio"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 2.25,
+          "1m": 1.21,
+          "3m": 2.26,
+          "6m": 3.49,
+          "12m": 7.89,
+          "2y": 20.14
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 135.8764,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": 0.15,
+          "feb": 1.28,
+          "mar": 0.42,
+          "abr": 1.93,
+          "may": 1.24,
+          "jun": 1.26,
+          "jul": 1.32,
+          "ago": -0.77,
+          "sep": -1.26,
+          "oct": 0.68,
+          "nov": 3.8,
+          "dic": 1.04,
+          "anual": 13.88
+        },
+        "2023": {
+          "ene": -0.02,
+          "feb": 0.25,
+          "mar": 1.58,
+          "abr": -0.51,
+          "may": -0.92,
+          "jun": 1.14,
+          "jul": 0.26,
+          "ago": 0.13,
+          "sep": -1.46,
+          "oct": -0.86,
+          "nov": 3.78,
+          "dic": 1.94,
+          "anual": 5.39
+        },
+        "2024": {
+          "ene": 0.23,
+          "feb": -0.07,
+          "mar": 0.21,
+          "abr": 0.47,
+          "may": 1.24,
+          "jun": 0.8,
+          "jul": 1.66,
+          "ago": 1.66,
+          "sep": 1.93,
+          "oct": -1.25,
+          "nov": 1.44,
+          "dic": -0.22,
+          "anual": 9.63
+        },
+        "2025": {
+          "ene": 0.71,
+          "feb": 1.07,
+          "mar": 0.77,
+          "abr": 0.81,
+          "may": 0.02,
+          "jun": 0.5,
+          "jul": 0.8,
+          "ago": 0.77,
+          "sep": 0.98,
+          "oct": 0.22,
+          "nov": 0.55,
+          "dic": 0.41,
+          "anual": 8.26
+        },
+        "2026": {
+          "ene": 0.51,
+          "feb": 0.52,
+          "mar": 1.19,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 2.25
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": false,
+        "art107": false,
+        "art108": false
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Inversión en instrumentos de deuda chilena de mediano y largo plazo. Acceso a oportunidades de crédito local para inversionistas calificados."
+    },
+    {
+      "_id": "fi-deuda-latam-uf",
+      "_paleta": "ambar",
+      "_categoria": "FI_RF",
+      "_categoria_display": "Fondo de Inversión · Deuda Latam UF",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo de Inversión LarrainVial Deuda Latam UF",
+        "nombre_corto": "Deuda Latam UF",
+        "run": "9150",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo de Inversión",
+        "moneda": "CLF",
+        "benchmark": null,
+        "horizonte_minimo": "largo plazo",
+        "rescate": "según reglamento",
+        "monto_minimo": "Inversionistas calificados",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 5,
+        "escala_max": 7,
+        "descripcion": "Medio-Alto"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 1.41,
+          "1m": 0.91,
+          "3m": 1.41,
+          "6m": 1.94,
+          "12m": 6.67,
+          "2y": 16.26
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": 100,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 135.8762,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -1,
+          "feb": -0.64,
+          "mar": -0.4,
+          "abr": -1.09,
+          "may": 0.27,
+          "jun": -3.44,
+          "jul": 0.24,
+          "ago": 1.66,
+          "sep": -3.92,
+          "oct": -0.07,
+          "nov": 4.7,
+          "dic": 2.26,
+          "anual": -0.33
+        },
+        "2023": {
+          "ene": 2.68,
+          "feb": -0.56,
+          "mar": -0.57,
+          "abr": 0.68,
+          "may": 0.87,
+          "jun": 1.64,
+          "jul": 2.42,
+          "ago": -0.2,
+          "sep": -1.93,
+          "oct": -2.02,
+          "nov": 3.82,
+          "dic": 3.94,
+          "anual": 10.86
+        },
+        "2024": {
+          "ene": -0.02,
+          "feb": 2.02,
+          "mar": 2.23,
+          "abr": -0.37,
+          "may": 0.5,
+          "jun": 1.6,
+          "jul": 1.46,
+          "ago": 1.48,
+          "sep": 1.22,
+          "oct": -0.54,
+          "nov": 1.03,
+          "dic": -0.24,
+          "anual": 11.49
+        },
+        "2025": {
+          "ene": 1.27,
+          "feb": 1.03,
+          "mar": -0.04,
+          "abr": -0.68,
+          "may": 0.39,
+          "jun": 1.35,
+          "jul": 1.45,
+          "ago": 1.21,
+          "sep": 0.8,
+          "oct": 0.37,
+          "nov": -0.38,
+          "dic": 0.48,
+          "anual": 7.56
+        },
+        "2026": {
+          "ene": 0.46,
+          "feb": 0.04,
+          "mar": 0.92,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 1.41
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": false,
+        "art107": false,
+        "art108": false
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Deuda latinoamericana reajustable en UF. Protección inflacionaria con exposición al crédito regional para inversionistas institucionales."
+    },
+    {
+      "_id": "fi-facturas",
+      "_paleta": "ambar",
+      "_categoria": "FI_ALT",
+      "_categoria_display": "Fondo de Inversión · Facturas",
+      "_estado": "pendiente_datos",
+      "identificacion": {
+        "nombre_completo": "Fondo de Inversión LarrainVial Facturas",
+        "nombre_corto": "Facturas",
+        "run": "9306",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo de Inversión",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "corto plazo",
+        "rescate": "según reglamento",
+        "monto_minimo": "Inversionistas calificados",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 3,
+        "escala_max": 7,
+        "descripcion": "Bajo-Medio"
+      },
+      "datos_mensuales": {
+        "periodo": null,
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": null,
+          "1m": null,
+          "3m": null,
+          "6m": null,
+          "12m": null,
+          "2y": null
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": []
+      },
+      "rentabilidades_historicas": {
+        "2024": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        },
+        "2025": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        },
+        "2026": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": false,
+        "art107": false,
+        "art108": false
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Inversión en facturas y cuentas por cobrar de empresas chilenas. Activo alternativo de corto plazo con retorno atractivo y descorrelación con mercados financieros."
+    },
+    {
+      "_id": "fi-deuda-retorno-absoluto",
+      "_paleta": "ambar",
+      "_categoria": "FI_RF",
+      "_categoria_display": "Fondo de Inversión · Deuda Retorno Absoluto",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo de Inversión LarrainVial Deuda Retorno Absoluto",
+        "nombre_corto": "Deuda Retorno Absoluto",
+        "run": "9346",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo de Inversión",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "mediano plazo",
+        "rescate": "según reglamento",
+        "monto_minimo": "Inversionistas calificados",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 4,
+        "escala_max": 7,
+        "descripcion": "Medio"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 3.56,
+          "1m": 6.97,
+          "3m": 3.56,
+          "6m": -1.27,
+          "12m": 4.5,
+          "2y": 9
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 150.5776,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": -5.86,
+          "feb": -1.69,
+          "mar": -2.07,
+          "abr": 6.46,
+          "may": -3.03,
+          "jun": 8.95,
+          "jul": 0.27,
+          "ago": -0.02,
+          "sep": 5.12,
+          "oct": -2.06,
+          "nov": -0.62,
+          "dic": -3.05,
+          "anual": 1.31
+        },
+        "2023": {
+          "ene": -4.9,
+          "feb": 4.69,
+          "mar": -2.98,
+          "abr": 1.82,
+          "may": 1.36,
+          "jun": -0.17,
+          "jul": 4.25,
+          "ago": 2.59,
+          "sep": 4.52,
+          "oct": 1.04,
+          "nov": -2.02,
+          "dic": 3.47,
+          "anual": 8.76
+        },
+        "2024": {
+          "ene": 7.47,
+          "feb": 3.89,
+          "mar": 2.23,
+          "abr": -2.5,
+          "may": -3.4,
+          "jun": 3.85,
+          "jul": 1.17,
+          "ago": -1.47,
+          "sep": -1.36,
+          "oct": 7.02,
+          "nov": 2.04,
+          "dic": 2.43,
+          "anual": 22.81
+        },
+        "2025": {
+          "ene": -0.62,
+          "feb": -2.72,
+          "mar": 0.37,
+          "abr": 1.47,
+          "may": -0.98,
+          "jun": -0.51,
+          "jul": 8.33,
+          "ago": 0.06,
+          "sep": -0.33,
+          "oct": -1.32,
+          "nov": -1.29,
+          "dic": -1.78,
+          "anual": -2.07
+        },
+        "2026": {
+          "ene": -8.94,
+          "feb": 6.32,
+          "mar": 6.98,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 3.56
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": false,
+        "art107": false,
+        "art108": false
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Estrategia de retorno absoluto en deuda. Posiciones largas y cortas en instrumentos de renta fija buscando retorno positivo independiente del ciclo de tasas."
+    },
+    {
+      "_id": "fi-deuda-privada",
+      "_paleta": "ambar",
+      "_categoria": "FI_ALT",
+      "_categoria_display": "Fondo de Inversión · Deuda Privada",
+      "_estado": "pendiente_datos",
+      "identificacion": {
+        "nombre_completo": "Fondo de Inversión LarrainVial Deuda Privada",
+        "nombre_corto": "Deuda Privada",
+        "run": "9469",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo de Inversión",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "largo plazo",
+        "rescate": "cerrado",
+        "monto_minimo": "Inversionistas calificados",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 5,
+        "escala_max": 7,
+        "descripcion": "Medio-Alto"
+      },
+      "datos_mensuales": {
+        "periodo": null,
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": null,
+          "1m": null,
+          "3m": null,
+          "6m": null,
+          "12m": null,
+          "2y": null
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": []
+      },
+      "rentabilidades_historicas": {
+        "2024": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        },
+        "2025": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        },
+        "2026": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": false,
+        "art107": false,
+        "art108": false
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Crédito privado a empresas medianas chilenas y latinoamericanas. Acceso a tasas superiores a la deuda pública con iliquidez controlada."
+    },
+    {
+      "_id": "fi-small-cap-chile",
+      "_paleta": "ambar",
+      "_categoria": "FI_RV",
+      "_categoria_display": "Fondo de Inversión · Small Cap Chile",
+      "_estado": "pendiente_datos",
+      "identificacion": {
+        "nombre_completo": "Fondo de Inversión LarrainVial Small Cap Chile",
+        "nombre_corto": "Small Cap Chile",
+        "run": "9658",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo de Inversión",
+        "moneda": "CLP",
+        "benchmark": "IGPA Small Cap",
+        "horizonte_minimo": "largo plazo",
+        "rescate": "según reglamento",
+        "monto_minimo": "Inversionistas calificados",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 7,
+        "escala_max": 7,
+        "descripcion": "Muy Alto"
+      },
+      "datos_mensuales": {
+        "periodo": null,
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": null,
+          "1m": null,
+          "3m": null,
+          "6m": null,
+          "12m": null,
+          "2y": null
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": "N/A",
+          "volatilidad_pct": null,
+          "rating_promedio": "N/A",
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": []
+      },
+      "rentabilidades_historicas": {
+        "2024": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        },
+        "2025": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        },
+        "2026": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": false,
+        "art107": false,
+        "art108": false
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Inversión en empresas de pequeña capitalización del mercado accionario chileno. Alta convicción y baja liquidez con potencial de retorno superior al IPSA."
+    },
+    {
+      "_id": "fi-deuda-privada-usd",
+      "_paleta": "ambar",
+      "_categoria": "FI_ALT",
+      "_categoria_display": "Fondo de Inversión · Deuda Privada USD",
+      "_estado": "pendiente_datos",
+      "identificacion": {
+        "nombre_completo": "Fondo de Inversión LarrainVial Deuda Privada USD",
+        "nombre_corto": "Deuda Privada USD",
+        "run": "9870",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo de Inversión",
+        "moneda": "USD",
+        "benchmark": null,
+        "horizonte_minimo": "largo plazo",
+        "rescate": "cerrado",
+        "monto_minimo": "Inversionistas calificados",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 5,
+        "escala_max": 7,
+        "descripcion": "Medio-Alto"
+      },
+      "datos_mensuales": {
+        "periodo": null,
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": null,
+          "1m": null,
+          "3m": null,
+          "6m": null,
+          "12m": null,
+          "2y": null
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": []
+      },
+      "rentabilidades_historicas": {
+        "2024": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        },
+        "2025": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        },
+        "2026": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": null
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": false,
+        "art107": false,
+        "art108": false
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Crédito privado en USD a empresas latinoamericanas. Diversificación en dólares con prima de iliquidez y retorno superior a la deuda pública."
+    },
+    {
+      "_id": "fi-deuda-privada-ii",
+      "_paleta": "ambar",
+      "_categoria": "FI_ALT",
+      "_categoria_display": "Fondo de Inversión · Deuda Privada II",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo de Inversión LarrainVial Deuda Privada II",
+        "nombre_corto": "Deuda Privada II",
+        "run": "10046",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo de Inversión",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "largo plazo",
+        "rescate": "cerrado",
+        "monto_minimo": "Inversionistas calificados",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 5,
+        "escala_max": 7,
+        "descripcion": "Medio-Alto"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": -0.6,
+          "1m": -0.2,
+          "3m": -0.61,
+          "6m": 1.84,
+          "12m": 5.34,
+          "2y": 4.79
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 145.4328,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2022": {
+          "ene": 0.72,
+          "feb": 1.09,
+          "mar": 1.23,
+          "abr": 1.32,
+          "may": 1.5,
+          "jun": 1.27,
+          "jul": 1.01,
+          "ago": 1.27,
+          "sep": 1.64,
+          "oct": 0.81,
+          "nov": 0.69,
+          "dic": 1.22,
+          "anual": 15.38
+        },
+        "2023": {
+          "ene": 0.64,
+          "feb": 0.65,
+          "mar": 0.47,
+          "abr": 0.62,
+          "may": 0.65,
+          "jun": 0.38,
+          "jul": 0.07,
+          "ago": 0.09,
+          "sep": 0.16,
+          "oct": 0.17,
+          "nov": 0.41,
+          "dic": 5.43,
+          "anual": 10.17
+        },
+        "2024": {
+          "ene": 0.59,
+          "feb": 0.23,
+          "mar": 0.17,
+          "abr": 0.08,
+          "may": 0.01,
+          "jun": 0.08,
+          "jul": -0.15,
+          "ago": -0.19,
+          "sep": -0.19,
+          "oct": -0.17,
+          "nov": -0.2,
+          "dic": 0.19,
+          "anual": 0.43
+        },
+        "2025": {
+          "ene": 0.27,
+          "feb": -0.12,
+          "mar": -0.1,
+          "abr": -0.17,
+          "may": 1.9,
+          "jun": -0.25,
+          "jul": 2.35,
+          "ago": -0.18,
+          "sep": -0.19,
+          "oct": -0.2,
+          "nov": -0.19,
+          "dic": 2.88,
+          "anual": 6.02
+        },
+        "2026": {
+          "ene": -0.21,
+          "feb": -0.18,
+          "mar": -0.2,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": -0.6
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": false,
+        "art107": false,
+        "art108": false
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Segunda generación del vehículo de deuda privada LVAM. Estrategia similar con mayores montos comprometidos y diversificación de deudores."
+    },
+    {
+      "_id": "fi-short-term-private-debt",
+      "_paleta": "ambar",
+      "_categoria": "FI_ALT",
+      "_categoria_display": "Fondo de Inversión · Short Term Private Debt",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo de Inversión LarrainVial Short Term Private Debt",
+        "nombre_corto": "Short Term Private Debt",
+        "run": "10436",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo de Inversión",
+        "moneda": "USD",
+        "benchmark": null,
+        "horizonte_minimo": "corto-mediano plazo",
+        "rescate": "según reglamento",
+        "monto_minimo": "Inversionistas calificados",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 4,
+        "escala_max": 7,
+        "descripcion": "Medio"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 0.77,
+          "1m": 0.31,
+          "3m": 0.77,
+          "6m": 1,
+          "12m": 4.23,
+          "2y": 9.13
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": 0,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 113.9965,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2023": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": 0.11,
+          "may": 0.62,
+          "jun": 0.37,
+          "jul": 0.33,
+          "ago": 0.27,
+          "sep": 0.27,
+          "oct": 0.38,
+          "nov": 0.36,
+          "dic": 0.37,
+          "anual": 3.19
+        },
+        "2024": {
+          "ene": 0.45,
+          "feb": 0.37,
+          "mar": 0.37,
+          "abr": -0.02,
+          "may": 0.31,
+          "jun": 0.23,
+          "jul": 0.29,
+          "ago": 0.42,
+          "sep": 0.5,
+          "oct": 0.53,
+          "nov": 0.46,
+          "dic": 0.5,
+          "anual": 4.53
+        },
+        "2025": {
+          "ene": 0.31,
+          "feb": 0.74,
+          "mar": 0.36,
+          "abr": 0.36,
+          "may": 1.28,
+          "jun": 0.42,
+          "jul": 0.32,
+          "ago": 0.36,
+          "sep": 0.2,
+          "oct": -0.02,
+          "nov": 0.24,
+          "dic": -0.01,
+          "anual": 4.88
+        },
+        "2026": {
+          "ene": 0.19,
+          "feb": 0.26,
+          "mar": 0.31,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 0.77
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": false,
+        "art107": false,
+        "art108": false
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Deuda privada de corto plazo en USD. Vencimientos menores a 2 años, mayor liquidez relativa versus deuda privada tradicional y retorno superior a money market."
+    },
+    {
+      "_id": "fi-retorno-local",
+      "_paleta": "ambar",
+      "_categoria": "FI_RF",
+      "_categoria_display": "Fondo de Inversión · Retorno Local",
+      "_estado": "datos_automaticos_excel",
+      "identificacion": {
+        "nombre_completo": "Fondo de Inversión LarrainVial Retorno Local",
+        "nombre_corto": "Retorno Local",
+        "run": "10671",
+        "nemo_dcv": null,
+        "bloomberg": null,
+        "tipo_vehiculo": "Fondo de Inversión",
+        "moneda": "CLP",
+        "benchmark": null,
+        "horizonte_minimo": "mediano plazo",
+        "rescate": "según reglamento",
+        "monto_minimo": "Inversionistas calificados",
+        "portfolio_manager": null,
+        "auditores": null,
+        "remuneracion": null,
+        "serie_referencia": "A",
+        "vigente": true
+      },
+      "riesgo": {
+        "nivel": 4,
+        "escala_max": 7,
+        "descripcion": "Medio"
+      },
+      "datos_mensuales": {
+        "periodo": "Marzo 2026",
+        "patrimonio_display": null,
+        "patrimonio_mm_clp": null,
+        "participes": null,
+        "valor_cuota_serie_a": null,
+        "rentabilidades": {
+          "ytd": 1.33,
+          "1m": 0.55,
+          "3m": 1.35,
+          "6m": 2.77,
+          "12m": 8.86,
+          "2y": 13.64
+        },
+        "estadisticas_cartera": {
+          "ytm_clf_pct": null,
+          "duracion_anios": null,
+          "volatilidad_pct": null,
+          "rating_promedio": null,
+          "expo_uf_pct": null,
+          "tac_pct": null,
+          "tac_industria_pct": null
+        },
+        "composicion": [],
+        "clasificacion_crediticia": [],
+        "principales_emisores": [],
+        "base_100_actual": 113.6406,
+        "fecha_dato": "2026-03-31"
+      },
+      "rentabilidades_historicas": {
+        "2024": {
+          "ene": null,
+          "feb": null,
+          "mar": null,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": 0.52,
+          "dic": 0.56,
+          "anual": 1.13
+        },
+        "2025": {
+          "ene": 1.03,
+          "feb": 1.37,
+          "mar": 0.72,
+          "abr": 0.63,
+          "may": -0.15,
+          "jun": 0.44,
+          "jul": 1.24,
+          "ago": 1.48,
+          "sep": 1.87,
+          "oct": 0.45,
+          "nov": 0.58,
+          "dic": 0.33,
+          "anual": 10.86
+        },
+        "2026": {
+          "ene": 0.66,
+          "feb": 0.11,
+          "mar": 0.52,
+          "abr": null,
+          "may": null,
+          "jun": null,
+          "jul": null,
+          "ago": null,
+          "sep": null,
+          "oct": null,
+          "nov": null,
+          "dic": null,
+          "anual": 1.33
+        }
+      },
+      "tributario": {
+        "apv": false,
+        "apvc": false,
+        "art57": false,
+        "art107": false,
+        "art108": false
+      },
+      "series": [
+        {
+          "serie": "A",
+          "remuneracion_pct": null,
+          "tac_pct": null,
+          "apv": false
+        }
+      ],
+      "objetivo": "Estrategia de retorno absoluto en deuda local chilena. Busca generar retorno positivo en todos los escenarios de tasa mediante gestión activa de duración y crédito."
+    }
+  ]
+}
