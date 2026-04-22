@@ -34,7 +34,10 @@
       "Bash(xargs -I{} curl -s \"http://localhost:3004/{}\")",
       "Bash(curl -s -o /dev/null -w \"money-market: %{http_code}\\\\n\" --max-time 30 http://localhost:3004/fondo/money-market)",
       "Bash(curl -s http://localhost:3004/fondo/money-market)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git checkout:*)"
     ]
   }
 }

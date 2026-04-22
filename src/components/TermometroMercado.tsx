@@ -94,6 +94,7 @@ export default function TermometroMercado({ fondoId }: { fondoId: string }) {
   return (
     <section style={{ background: 'var(--white)', borderBottom: '1px solid var(--line)' }}>
       <div
+        className="lv-termometro-inner"
         style={{
           maxWidth: 1280,
           margin: '0 auto',
@@ -121,7 +122,7 @@ export default function TermometroMercado({ fondoId }: { fondoId: string }) {
           </div>
         </div>
 
-        <div style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
+        <div className="lv-termometro-indicadores" style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
           {data ? (
             <>
               <Indicador
@@ -143,7 +144,11 @@ export default function TermometroMercado({ fondoId }: { fondoId: string }) {
           )}
         </div>
 
-        {data && <Semaforo sem={evaluarSemaforo(fondoId, data)} />}
+        {data && (
+          <div className="lv-termometro-semaforo">
+            <Semaforo sem={evaluarSemaforo(fondoId, data)} />
+          </div>
+        )}
       </div>
 
       {data && (

@@ -30,6 +30,7 @@ export default function LoginPage() {
 
   return (
     <div
+      className="lv-login-shell"
       style={{
         minHeight: '100vh',
         background: 'linear-gradient(135deg, var(--snow), var(--pale))',
@@ -40,6 +41,7 @@ export default function LoginPage() {
       }}
     >
       <div
+        className="lv-login-card"
         style={{
           width: '100%',
           maxWidth: 420,

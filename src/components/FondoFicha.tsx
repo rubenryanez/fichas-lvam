@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Chart, registerables, type ChartConfiguration } from 'chart.js';
 import AuthGuard from '@/components/AuthGuard';
 import TermometroMercado from '@/components/TermometroMercado';
+import MobileTabMenu from '@/components/MobileTabMenu';
 import {
   buildBase100,
   rentAcumuladaReal,
@@ -97,13 +98,14 @@ export default function FondoFicha({
 
   return (
     <AuthGuard>
-      <div className={paletaClass} style={{ minHeight: '100vh', background: 'var(--snow)', overflowX: 'hidden' }}>
+      <div className={`${paletaClass} lv-ficha`} style={{ minHeight: '100vh', background: 'var(--snow)', overflowX: 'hidden' }}>
         <Topbar fondo={fondo} />
         <Hero fondo={fondo} />
         <MetricStrip fondo={fondo} />
         {showTermometro && <TermometroMercado fondoId={fondo._id} />}
         <NavTabs active={tab} onChange={setTab} />
-        <main style={{ maxWidth: 1280, margin: '0 auto', padding: '24px 28px 32px', overflowX: 'hidden' }}>
+        <MobileTabMenu tabs={TABS} active={tab} onChange={setTab} />
+        <main className="lv-main" style={{ maxWidth: 1280, margin: '0 auto', padding: '24px 28px 32px', overflowX: 'hidden' }}>
           {tab === 'ficha' && <TabFicha fondo={fondo} />}
           {tab === 'rentabilidad' && (
             <TabRentabilidad fondo={fondo} ipcMensual={ipcMensual} forestHex={forest} mintHex={mint} />
@@ -136,8 +138,29 @@ function Topbar({ fondo }: { fondo: any }) {
       }}
     >
       <div
+        className="lv-topbar-inner"
         style={{ maxWidth: 1280, margin: '0 auto', width: '100%', display: 'flex', alignItems: 'center', gap: 12 }}
       >
+        <Link
+          href="/"
+          className="lv-btn-touch"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 6,
+            color: 'rgba(255,255,255,.9)',
+            fontSize: 12.5,
+            fontWeight: 600,
+            padding: '6px 10px',
+            border: '1px solid rgba(255,255,255,.2)',
+            borderRadius: 6,
+            background: 'rgba(255,255,255,.06)',
+            WebkitTapHighlightColor: 'transparent',
+          }}
+          aria-label="Volver al índice de fondos"
+        >
+          <span aria-hidden>←</span> Fondos
+        </Link>
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, color: 'inherit' }}>
           <svg width="20" height="20" viewBox="0 0 32 32" aria-hidden>
             <path d="M16 2 L30 16 L16 30 L2 16 Z" fill="#D6EAF8" opacity=".9" />
@@ -145,12 +168,22 @@ function Topbar({ fondo }: { fondo: any }) {
           </svg>
           <strong style={{ fontSize: 13, letterSpacing: '.1em', color: '#fff' }}>LARRAINVIAL</strong>
         </Link>
-        <span style={{ color: 'rgba(255,255,255,.25)' }}>│</span>
-        <span style={{ fontSize: 12, letterSpacing: '.04em' }}>Asset Management</span>
+        <span className="lv-topbar-desktop-only" style={{ color: 'rgba(255,255,255,.25)' }}>│</span>
+        <span className="lv-topbar-desktop-only" style={{ fontSize: 12, letterSpacing: '.04em' }}>Asset Management</span>
         <span style={{ flex: 1 }} />
-        <TopPill>RUN {id.run}</TopPill>
-        {id.nemo_dcv && <TopPill>Nemo {id.nemo_dcv}</TopPill>}
-        {id.bloomberg && <TopPill mint>{id.bloomberg}</TopPill>}
+        <span className="lv-topbar-desktop-only" style={{ display: 'inline-flex' }}>
+          <TopPill>RUN {id.run}</TopPill>
+        </span>
+        {id.nemo_dcv && (
+          <span className="lv-topbar-desktop-only" style={{ display: 'inline-flex' }}>
+            <TopPill>Nemo {id.nemo_dcv}</TopPill>
+          </span>
+        )}
+        {id.bloomberg && (
+          <span className="lv-topbar-desktop-only" style={{ display: 'inline-flex' }}>
+            <TopPill mint>{id.bloomberg}</TopPill>
+          </span>
+        )}
         {periodo && <TopPill>{periodo}</TopPill>}
       </div>
     </div>
@@ -192,6 +225,7 @@ function Hero({ fondo }: { fondo: any }) {
       }}
     >
       <div
+        className="lv-hero-grid"
         style={{
           maxWidth: 1280,
           margin: '0 auto',
@@ -222,14 +256,14 @@ function Hero({ fondo }: { fondo: any }) {
             {fondo._categoria_display}
           </div>
           <h1
-            className="display"
+            className="display lv-hero-title"
             style={{ margin: 0, fontSize: 40, color: 'var(--ink)', fontWeight: 400, lineHeight: 1.1 }}
           >
             Fondo Mutuo
             <br />
             <em style={{ color: 'var(--forest)', fontStyle: 'italic', fontWeight: 700 }}>{id.nombre_corto}</em>
           </h1>
-          <div style={{ marginTop: 16, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+          <div className="lv-hero-chips" style={{ marginTop: 16, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
             <HeroChip variant="g">Riesgo {riesgo.nivel}/{riesgo.escala_max}</HeroChip>
             <HeroChip variant="g">Serie {id.serie_referencia}</HeroChip>
             <HeroChip>{id.horizonte_minimo}</HeroChip>
@@ -239,7 +273,7 @@ function Hero({ fondo }: { fondo: any }) {
         </div>
 
         {/* Derecha: Patrimonio */}
-        <div style={{ textAlign: 'right' }}>
+        <div className="lv-hero-right" style={{ textAlign: 'right' }}>
           <div
             style={{
               fontSize: 10.5,
@@ -252,7 +286,7 @@ function Hero({ fondo }: { fondo: any }) {
             Patrimonio del Fondo
           </div>
           <div
-            className="display"
+            className="display lv-hero-patrimonio"
             style={{
               fontSize: 48,
               color: 'var(--forest)',
@@ -266,7 +300,7 @@ function Hero({ fondo }: { fondo: any }) {
           <div style={{ fontSize: 12, color: 'var(--steel)' }}>
             {id.moneda} · Valor cuota diario · Auditores {fmtText(id.auditores)}
           </div>
-          <div style={{ marginTop: 12, display: 'flex', gap: 6, justifyContent: 'flex-end' }}>
+          <div className="lv-hero-tags" style={{ marginTop: 12, display: 'flex', gap: 6, justifyContent: 'flex-end' }}>
             <HeroChip variant="g" small>
               AMP-1 S&P Global
             </HeroChip>
@@ -339,6 +373,7 @@ function MetricStrip({ fondo }: { fondo: any }) {
   return (
     <section style={{ background: 'var(--white)', borderBottom: '1px solid var(--line)' }}>
       <div
+        className="lv-metric-strip"
         style={{
           maxWidth: 1280,
           margin: '0 auto',
@@ -412,6 +447,7 @@ function MetricCell({
 function HintCell() {
   return (
     <div
+      className="lv-hint-cell"
       style={{
         padding: '16px 14px',
         background: 'var(--snow)',
@@ -463,6 +499,7 @@ function HelpIcon({ text, title }: { text: string; title?: string }) {
 function NavTabs({ active, onChange }: { active: TabKey; onChange: (t: TabKey) => void }) {
   return (
     <nav
+      className="lv-navtabs-desktop"
       style={{
         background: 'var(--white)',
         borderBottom: '1px solid var(--line)',
@@ -540,7 +577,7 @@ function TabFicha({ fondo }: { fondo: any }) {
   const est = dm.estadisticas_cartera;
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '3fr 2fr 2fr', gap: 16 }}>
+    <div className="lv-tab-ficha-grid" style={{ display: 'grid', gridTemplateColumns: '3fr 2fr 2fr', gap: 16 }}>
       {/* Columna 1 */}
       <div style={{ display: 'grid', gap: 16 }}>
         <Card>
@@ -566,7 +603,7 @@ function TabFicha({ fondo }: { fondo: any }) {
         </Card>
 
         <Card title="Composición y estadísticas">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 18 }}>
+          <div className="lv-composicion-stats" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 18 }}>
             <div>
               {dm.composicion?.length ? (
                 <PctList data={dm.composicion} />
@@ -844,7 +881,7 @@ function TabRentabilidad({
   return (
     <div style={{ display: 'grid', gap: 16 }}>
       {/* KPIs */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 10 }}>
+      <div className="lv-rent-kpis" style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 10 }}>
         <KpiBig highlight label="YTD" value={fmtPct(r.ytd)} />
         <Kpi label="1 Mes" value={fmtPct(r['1m'])} />
         <Kpi label="3 Meses" value={fmtPct(r['3m'])} />
@@ -854,7 +891,7 @@ function TabRentabilidad({
       </div>
 
       {/* Gráficos */}
-      <div style={{ display: 'grid', gridTemplateColumns: '5fr 3fr', gap: 16 }}>
+      <div className="lv-rent-charts" style={{ display: 'grid', gridTemplateColumns: '5fr 3fr', gap: 16 }}>
         <Card>
           <div
             style={{
@@ -925,7 +962,7 @@ function TabRentabilidad({
             </div>
           )}
 
-          <LineChart labels={base.labels} datasets={datasets} height={280} />
+          <LineChart labels={base.labels} datasets={datasets} height={280} className="chart-base100" />
 
           {modo !== 'nominal' && (
             <div style={{ marginTop: 10, fontSize: 11.5, color: 'var(--mist)', lineHeight: 1.5 }}>
@@ -1037,7 +1074,7 @@ function BarBestWorst({
     };
   }, [best, worst]);
   return (
-    <div style={{ position: 'relative', height: 280 }}>
+    <div className="chart-bestworst" style={{ position: 'relative', height: 280 }}>
       <canvas ref={ref} />
     </div>
   );
@@ -1046,7 +1083,7 @@ function BarBestWorst({
 function TablaMensual({ hist, years }: { hist: SerieMensual; years: string[] }) {
   const lastYear = years[years.length - 1];
   return (
-    <div style={{ overflowX: 'auto' }}>
+    <div className="lv-rent-tabla" style={{ overflowX: 'auto' }}>
       <table className="num" style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12.5 }}>
         <thead>
           <tr style={{ background: 'var(--forest)', color: 'var(--white)' }}>
@@ -1150,7 +1187,7 @@ function TabComparador({ fondo, forestHex }: { fondo: any; forestHex: string }) 
         El perfil multifactor compara este fondo con sus pares habituales. Datos referenciales a modo de posicionamiento.
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+      <div className="lv-comp-charts" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
         <Card title="Perfil por dimensión">
           <RadarChart
             labels={ejes}
@@ -1159,6 +1196,7 @@ function TabComparador({ fondo, forestHex }: { fondo: any; forestHex: string }) 
               ...datasetsComps,
             ]}
             height={320}
+            className="chart-radar"
           />
         </Card>
 
@@ -1183,12 +1221,13 @@ function TabComparador({ fondo, forestHex }: { fondo: any; forestHex: string }) 
               })),
             ]}
             height={320}
+            className="chart-cmp-line"
           />
         </Card>
       </div>
 
       <Card title="Comparativa lado a lado">
-        <div style={{ overflowX: 'auto' }}>
+        <div className="lv-comp-table-wrap" style={{ overflowX: 'auto' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
             <thead>
               <tr>
@@ -1375,7 +1414,7 @@ function TabSimulador({
   const simbolo = fondo.identificacion.moneda === 'USD' ? 'USD ' : '$';
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: 16 }}>
+    <div className="lv-sim-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: 16 }}>
       <Card title="Parámetros">
         <label style={{ display: 'block', fontSize: 11, color: 'var(--mist)', letterSpacing: '.08em', textTransform: 'uppercase', fontWeight: 600, marginBottom: 4 }}>
           Monto inicial
@@ -1428,6 +1467,7 @@ function TabSimulador({
           onClick={() => {
             /* recompute is automatic */
           }}
+          className="lv-sim-calcular lv-btn-touch"
           style={{
             marginTop: 8,
             width: '100%',
@@ -1448,7 +1488,7 @@ function TabSimulador({
 
       <div style={{ display: 'grid', gap: 16 }}>
         <Card>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12 }}>
+          <div className="lv-sim-resultados" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12 }}>
             <ResultadoBox
               label="Capital final"
               value={`${simbolo}${nf0.format(final)}`}
@@ -1524,6 +1564,7 @@ function TabSimulador({
             height={260}
             moneyFormat
             currencySymbol={simbolo}
+            className="chart-sim-proj"
           />
         </Card>
       </div>
@@ -1627,7 +1668,7 @@ function TabTributario({ fondo }: { fondo: any }) {
         </div>
       </Card>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
+      <div className="lv-trib-cards" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
         {arts.map((a) => {
           const active = !!t[a.k];
           return (
@@ -1723,9 +1764,9 @@ function TabGuia({ fondo }: { fondo: any }) {
   ];
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: 16 }}>
+    <div className="lv-guia-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: 16 }}>
       <Card title="Selecciona tu horizonte">
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, marginBottom: 16 }}>
+        <div className="lv-guia-horiz" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, marginBottom: 16 }}>
           {horBtns.map((b) => {
             const on = h === b.k;
             return (
@@ -1810,7 +1851,7 @@ function TabSeries({ fondo }: { fondo: any }) {
   return (
     <div style={{ display: 'grid', gap: 16 }}>
       <Card title="Series disponibles">
-        <div style={{ overflowX: 'auto' }}>
+        <div className="lv-series-tabla" style={{ overflowX: 'auto' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
             <thead>
               <tr style={{ background: 'var(--forest)', color: 'var(--white)' }}>
@@ -1891,12 +1932,14 @@ function LineChart({
   height,
   moneyFormat,
   currencySymbol,
+  className,
 }: {
   labels: string[];
   datasets: { label: string; data: number[]; color: string; dashed?: boolean }[];
   height: number;
   moneyFormat?: boolean;
   currencySymbol?: string;
+  className?: string;
 }) {
   const ref = useRef<HTMLCanvasElement | null>(null);
   const chartRef = useRef<Chart | null>(null);
@@ -1957,7 +2000,7 @@ function LineChart({
   }, [labels, datasets, moneyFormat, sym]);
 
   return (
-    <div style={{ position: 'relative', height }}>
+    <div className={className} style={{ position: 'relative', height }}>
       <canvas ref={ref} />
     </div>
   );
@@ -1967,10 +2010,12 @@ function RadarChart({
   labels,
   datasets,
   height,
+  className,
 }: {
   labels: string[];
   datasets: { label: string; data: number[]; color: string }[];
   height: number;
+  className?: string;
 }) {
   const ref = useRef<HTMLCanvasElement | null>(null);
   const chartRef = useRef<Chart | null>(null);
@@ -2014,7 +2059,7 @@ function RadarChart({
     };
   }, [labels, datasets]);
   return (
-    <div style={{ position: 'relative', height }}>
+    <div className={className} style={{ position: 'relative', height }}>
       <canvas ref={ref} />
     </div>
   );

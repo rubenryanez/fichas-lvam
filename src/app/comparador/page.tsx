@@ -125,6 +125,7 @@ function ComparadorInner() {
         </div>
 
         <div
+          className="lv-cmp-selector"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
@@ -394,7 +395,7 @@ function TablaComparativa({ fondos }: { fondos: any[] }) {
       }}
     >
       <h3 style={secTitle()}>Comparación lado a lado</h3>
-      <div style={{ overflowX: 'auto' }}>
+      <div className="lv-cmp-tabla" style={{ overflowX: 'auto' }}>
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
           <thead>
             <tr>
