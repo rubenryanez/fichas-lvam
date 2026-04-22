@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Tokens base del design system (docs/DESIGN.md) ---------- */
+:root {
+  --ink: #111827;
+  --steel: #374151;
+  --mist: #6B7280;
+  --fog: #9CA3AF;
+  --line: #E5E7EB;
+  --line2: #F3F4F6;
+  --snow: #F9FAFB;
+  --white: #FFFFFF;
+  --red: #B91C1C;
+  --red-bg: #FEF2F2;
+  --amber: #B45309;
+  --amber-bg: #FFFBEB;
+
+  /* Paleta "verde" por defecto (RF UF) — cada página puede sobreescribir */
+  --forest: #1A3D2B;
+  --grove: #2D6A4F;
+  --leaf: #40916C;
+  --mint: #74C69D;
+  --pale: #D8F3DC;
+}
+
+/* ---------- Paletas por categoría ----------
+   Se aplican añadiendo class="paleta-{nombre}" al contenedor de la ficha o card */
+
+.paleta-verde {
+  --forest: #1A3D2B;
+  --grove: #2D6A4F;
+  --leaf: #40916C;
+  --mint: #74C69D;
+  --pale: #D8F3DC;
+}
+.paleta-azul {
+  --forest: #1A3D5C;
+  --grove: #1D4E89;
+  --leaf: #2E86C1;
+  --mint: #7FB3D3;
+  --pale: #D6EAF8;
+}
+.paleta-indigo {
+  --forest: #2D1A5C;
+  --grove: #4A3080;
+  --leaf: #7B5EA7;
+  --mint: #A89CC8;
+  --pale: #E8E4F3;
+}
+.paleta-teal {
+  --forest: #1A3D3D;
+  --grove: #2D6A6A;
+  --leaf: #40918C;
+  --mint: #74C6C3;
+  --pale: #D8F3F2;
+}
+.paleta-gris {
+  --forest: #2C3E50;
+  --grove: #4A5568;
+  --leaf: #718096;
+  --mint: #A0AEC0;
+  --pale: #EDF2F7;
+}
+.paleta-ambar {
+  --forest: #78350F;
+  --grove: #92400E;
+  --leaf: #B45309;
+  --mint: #D97706;
+  --pale: #FEF3C7;
+}
+
+/* ---------- Base ---------- */
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--snow);
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE/Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none;                /* Chrome/Safari/Opera */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ---------- Tooltip custom (instantáneo) ---------- */
+.help-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.help-wrap .tooltip-bubble {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1A2535;
+  color: rgba(255, 255, 255, 0.92);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.45;
+  width: max-content;
+  max-width: 240px;
+  border: 1px solid rgba(127, 179, 211, 0.35);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.08s linear, visibility 0.08s linear;
+  z-index: 200;
+  white-space: normal;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.help-wrap .tooltip-bubble::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #1A2535;
+}
+.help-wrap:hover .tooltip-bubble,
+.help-wrap:focus-within .tooltip-bubble {
+  opacity: 1;
+  visibility: visible;
+}
+.tooltip-title {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mint);
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Números financieros */
+.num {
+  font-family: var(--font-num), system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Títulos hero */
+.display {
+  font-family: var(--font-display), serif;
+}
+
+/* Convenciones de color */
+.val-pos {
+  color: var(--forest);
+}
+.val-neg {
+  color: var(--red);
+}
+
+/* ---------- Ocultar TODOS los scrollbars (body + elementos internos) ---------- */
+* {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
+}
